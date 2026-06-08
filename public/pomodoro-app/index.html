@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="极美番茄钟 - 融合经典番茄工作法与胡伯曼随机脑机制间隙回放法的高颜值专注工具">
+    <title>Focus Flow | 极美番茄钟</title>
+    <!-- 引入 Outfit 现代无衬线字体与 Share Tech Mono 科技感等宽字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 动态渐变背景雾 -->
+    <div class="ambient-bg" id="ambientBg"></div>
+
+    <!-- 主体容器 -->
+    <main class="app-container">
+        <!-- 头部标题 -->
+        <header class="app-header">
+            <h1 id="appTitle">Focus Flow</h1>
+            <button class="settings-btn" id="openSettingsBtn" aria-label="打开设置" title="设置">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.1a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+            </button>
+        </header>
+
+        <!-- 模式切换滑块 -->
+        <section class="mode-selector-container">
+            <div class="mode-slider" id="modeSlider"></div>
+            <button class="mode-tab active" id="tabClassic" data-mode="classic">经典番茄</button>
+            <button class="mode-tab" id="tabHuberman" data-mode="huberman">胡伯曼随机</button>
+        </section>
+
+        <!-- 玻璃拟物卡片 -->
+        <section class="glass-card">
+            <!-- 计时状态提示 -->
+            <div class="status-indicator" id="statusIndicator">
+                <span class="status-dot pulsing" id="statusDot"></span>
+                <span class="status-text" id="statusText">准备专注</span>
+            </div>
+
+            <!-- 圆形进度与数字时钟 -->
+            <div class="timer-display-wrapper">
+                <svg class="progress-ring" viewBox="0 0 200 200">
+                    <circle class="progress-ring-bg" cx="100" cy="100" r="88" />
+                    <circle class="progress-ring-bar" id="progressRingBar" cx="100" cy="100" r="88" />
+                </svg>
+                <div class="time-countdown-container" id="timeCountdownContainer" style="cursor: pointer;" title="点击切换显示/隐藏时间数字">
+                    <div class="time-countdown" id="timeCountdown">25:00</div>
+                    <div class="time-hidden-label hidden" id="timeHiddenLabel">FLOW</div>
+                </div>
+            </div>
+
+            <!-- 隐藏倒计时快速切换按钮 -->
+            <button class="eye-toggle-btn" id="eyeToggleBtn" title="显示/隐藏时间数字">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="eye-open-icon" id="eyeOpenIcon">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="eye-closed-icon hidden" id="eyeClosedIcon">
+                    <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+                    <line x1="1" y1="1" x2="23" y2="23"></line>
+                </svg>
+                <span id="eyeToggleText">隐藏时间</span>
+            </button>
+
+            <!-- 专注阶段随机次数提示（仅胡伯曼模式展示） -->
+            <div class="huberman-info hidden" id="hubermanInfo">
+                <span class="info-label">本轮间歇周期</span>
+                <span class="info-value" id="hubermanCycles">--/--</span>
+            </div>
+
+            <!-- 控制按钮区 -->
+            <div class="controls-container">
+                <button class="ctrl-btn secondary" id="resetBtn" aria-label="重置" title="重置">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2.5 2v6h6M21.5 22v-6h-6"></path>
+                        <path d="M22 11.5A10 10 0 0 0 3.2 7.2L2.5 8M2 12.5a10 10 0 0 0 18.8 4.2l.7-.7"></path>
+                    </svg>
+                </button>
+                <button class="ctrl-btn primary" id="playPauseBtn" aria-label="开始" title="开始">
+                    <!-- 默认为 Play 图标 -->
+                    <svg class="play-icon" id="playIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                    <!-- Pause 图标 -->
+                    <svg class="pause-icon hidden" id="pauseIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <rect x="6" y="4" width="4" height="16" rx="1"></rect>
+                        <rect x="14" y="4" width="4" height="16" rx="1"></rect>
+                    </svg>
+                </button>
+                <button class="ctrl-btn secondary" id="skipBtn" aria-label="跳过" title="跳过">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="5 4 15 12 5 20 5 4"></polygon>
+                        <line x1="19" y1="5" x2="19" y2="19"></line>
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- 设置抽屉面板 -->
+    <div class="settings-overlay" id="settingsOverlay">
+        <div class="settings-drawer" id="settingsDrawer">
+            <div class="drawer-header">
+                <h2>配置项</h2>
+                <button class="close-btn" id="closeSettingsBtn" aria-label="关闭设置">✕</button>
+            </div>
+            
+            <div class="drawer-content">
+                <!-- 经典模式设置 -->
+                <div class="settings-group">
+                    <h3>经典模式时长 (分钟)</h3>
+                    <div class="setting-item">
+                        <label for="inputClassicWork">专注时长</label>
+                        <div class="slider-wrapper">
+                            <input type="range" id="inputClassicWork" min="5" max="60" step="5" value="25">
+                            <span class="range-val" id="valClassicWork">25m</span>
+                        </div>
+                    </div>
+                    <div class="setting-item">
+                        <label for="inputClassicBreak">休息时长</label>
+                        <div class="slider-wrapper">
+                            <input type="range" id="inputClassicBreak" min="1" max="30" step="1" value="5">
+                            <span class="range-val" id="valClassicBreak">5m</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 胡伯曼模式设置 -->
+                <div class="settings-group">
+                    <h3>胡伯曼随机范围 (分钟)</h3>
+                    <div class="setting-item">
+                        <label for="inputHubermanWorkMin">最短专注时间</label>
+                        <div class="slider-wrapper">
+                            <input type="range" id="inputHubermanWorkMin" min="5" max="25" step="1" value="15">
+                            <span class="range-val" id="valHubermanWorkMin">15m</span>
+                        </div>
+                    </div>
+                    <div class="setting-item">
+                        <label for="inputHubermanWorkMax">最长专注时间</label>
+                        <div class="slider-wrapper">
+                            <input type="range" id="inputHubermanWorkMax" min="26" max="60" step="1" value="35">
+                            <span class="range-val" id="valHubermanWorkMax">35m</span>
+                        </div>
+                    </div>
+                    <div class="setting-item">
+                        <label for="inputHubermanBreakMin">最短休整时间</label>
+                        <div class="slider-wrapper">
+                            <input type="range" id="inputHubermanBreakMin" min="1" max="2" step="0.5" value="1">
+                            <span class="range-val" id="valHubermanBreakMin">1m</span>
+                        </div>
+                    </div>
+                    <div class="setting-item">
+                        <label for="inputHubermanBreakMax">最长休整时间</label>
+                        <div class="slider-wrapper">
+                            <input type="range" id="inputHubermanBreakMax" min="2" max="10" step="0.5" value="3">
+                            <span class="range-val" id="valHubermanBreakMax">3m</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 声音与音效 -->
+                <div class="settings-group">
+                    <h3>声音与提示</h3>
+                    <div class="setting-item">
+                        <label for="soundSelect">提示声音</label>
+                        <select id="soundSelect" class="custom-select">
+                            <option value="bowl">空灵藏磬 (Bowl)</option>
+                            <option value="muyu">禅意木鱼 (Muyu)</option>
+                            <option value="digital">温暖电子 (Digital)</option>
+                        </select>
+                    </div>
+                    <div class="setting-item">
+                        <label for="volumeSlider">提示音量</label>
+                        <div class="slider-wrapper">
+                            <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.7">
+                            <span class="range-val" id="valVolume">70%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="drawer-footer">
+                <button class="save-settings-btn" id="saveSettingsBtn">保存并应用</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 胡伯曼模式放空覆盖层 (大字提醒闭眼) -->
+    <div class="chill-overlay hidden" id="chillOverlay">
+        <div class="chill-content">
+            <div class="ripple-ring"></div>
+            <h2 id="chillTitle">间隙效应触发中</h2>
+            <p id="chillSubtitle">请闭上眼睛，放空大脑。绝对不要查看手机！</p>
+            <div class="chill-timer" id="chillTimer">02:00</div>
+            <button class="chill-skip-btn" id="chillSkipBtn">提前结束休整</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
