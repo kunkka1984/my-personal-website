@@ -305,18 +305,28 @@ function startTimer() {
         }
     }
 
+    // 设置目标结束时间，防止移动端锁屏或切后台导致 setInterval 被节流挂起
+    timer.targetEndTime = Date.now() + (timer.timeLeft * 1000);
+
     updateUI();
     
-    // 启动定时器间隔
+    // 启动定时器间隔 (缩短轮询间隔，并与系统时间比对)
     timer.intervalId = setInterval(() => {
-        if (timer.timeLeft > 0) {
-            timer.timeLeft--;
-            updateUI();
+        const now = Date.now();
+        const remaining = Math.round((timer.targetEndTime - now) / 1000);
+        
+        if (remaining > 0) {
+            if (timer.timeLeft !== remaining) {
+                timer.timeLeft = remaining;
+                updateUI();
+            }
         } else {
             // 时间耗尽，触发阶段转换
+            timer.timeLeft = 0;
+            updateUI();
             handlePhaseTransition();
         }
-    }, 1000);
+    }, 200);
 }
 
 function pauseTimer() {

@@ -45,7 +45,9 @@ body {
     background-color: var(--color-bg-2);
     color: var(--text-primary);
     min-height: 100vh;
-    overflow: hidden;
+    min-height: 100dvh;
+    overflow-x: hidden;
+    overflow-y: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +58,7 @@ body {
  * 2. 动态环境渐变雾背景
  * ------------------------------------------------------------- */
 .ambient-bg {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
