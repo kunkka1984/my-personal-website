@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import IPOReminderWidget from "@/components/IPOReminderWidget";
 
 export default function Home() {
   const apps = [
@@ -37,6 +38,11 @@ export default function Home() {
             打造极简、优雅且直觉式的数字体验。
           </p>
         </motion.div>
+      </section>
+
+      {/* IPO Reminder Widget */}
+      <section className="relative -mt-20 z-20">
+        <IPOReminderWidget />
       </section>
 
       {/* Apps Section */}
