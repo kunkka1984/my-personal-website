@@ -28,3 +28,113 @@ body {
   backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
+
+/* ---- 文章正文排版 ---- */
+.article-body {
+  font-size: 1.0625rem;
+  line-height: 1.9;
+  color: #333336;
+}
+
+.article-body h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #1d1d1f;
+  margin: 2.5em 0 0.9em;
+  padding-top: 0.75em;
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.article-body h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin: 2em 0 0.7em;
+}
+
+.article-body p {
+  margin: 1.1em 0;
+}
+
+.article-body strong {
+  color: #1d1d1f;
+  font-weight: 600;
+}
+
+.article-body blockquote {
+  margin: 1.5em 0;
+  padding: 0.85em 1.25em;
+  border-left: 3px solid var(--apple-blue);
+  background: rgba(0, 113, 227, 0.05);
+  border-radius: 0 12px 12px 0;
+  color: #515154;
+  font-size: 0.975rem;
+}
+
+.article-body blockquote p {
+  margin: 0.3em 0;
+}
+
+.article-body ul,
+.article-body ol {
+  margin: 1.1em 0;
+  padding-left: 1.6em;
+}
+
+.article-body ul {
+  list-style: disc;
+}
+
+.article-body ol {
+  list-style: decimal;
+}
+
+.article-body li {
+  margin: 0.55em 0;
+}
+
+.article-body li::marker {
+  color: var(--apple-blue);
+  font-weight: 600;
+}
+
+.article-body table {
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 1.75em 0;
+  font-size: 0.925rem;
+  line-height: 1.6;
+}
+
+.article-body th,
+.article-body td {
+  padding: 0.7em 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  text-align: left;
+  white-space: nowrap;
+}
+
+.article-body th {
+  background: #f5f5f7;
+  font-weight: 600;
+  color: #1d1d1f;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.article-body tr:last-child td {
+  border-bottom: none;
+}
+
+.article-body hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 2.5em auto;
+  width: 40%;
+}
+
+.article-body hr + p {
+  font-size: 0.85rem;
+  color: #86868b;
+}
