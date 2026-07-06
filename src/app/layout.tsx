@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://198475.xyz"),
+  metadataBase: new URL("https://chengbenguan.com"),
   title: {
     default: "kunkka 科技生活 — 极简实用的自制工具",
     template: "%s | kunkka 科技生活",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://198475.xyz",
+    url: "https://chengbenguan.com",
     siteName: "kunkka 科技生活",
     title: "kunkka 科技生活 — 极简实用的自制工具",
     description:

@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://198475.xyz/sitemap.xml",
+    sitemap: "https://chengbenguan.com/sitemap.xml",
   };
 }
