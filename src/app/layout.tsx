@@ -9,8 +9,37 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "kunkka 科技生活",
-  description: "个人主页与自制应用展示",
+  metadataBase: new URL("https://198475.xyz"),
+  title: {
+    default: "kunkka 科技生活 — 极简实用的自制工具",
+    template: "%s | kunkka 科技生活",
+  },
+  description:
+    "kunkka 的个人主页：分享自制的实用小工具——A股打新提醒、胡伯曼随机番茄钟等，用 AI 打造极简、优雅且直觉式的数字体验。",
+  keywords: ["A股打新提醒", "新股申购日历", "番茄钟", "专注力工具", "AI 自制应用", "kunkka"],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://198475.xyz",
+    siteName: "kunkka 科技生活",
+    title: "kunkka 科技生活 — 极简实用的自制工具",
+    description:
+      "自制实用小工具：A股打新提醒、胡伯曼随机番茄钟等，用 AI 打造极简、优雅且直觉式的数字体验。",
+    locale: "zh_CN",
+    images: [{ url: "/images/ipo.jpg", width: 1200, height: 800, alt: "kunkka 科技生活" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "kunkka 科技生活 — 极简实用的自制工具",
+    description: "自制实用小工具：A股打新提醒、胡伯曼随机番茄钟等。",
+    images: ["/images/ipo.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

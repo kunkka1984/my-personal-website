@@ -9,14 +9,14 @@ export default function Home() {
       name: "胡伯曼随机番茄钟",
       tagline: "反脆弱的专注力",
       description: "基于斯坦福 Huberman 教授的研究，引入随机性的极简番茄钟，让你在不确定的节奏中高度沉浸当下。",
-      image: "https://images.unsplash.com/photo-1508614999368-9260051292e5?auto=format&fit=crop&q=80&w=800",
+      image: "/images/pomodoro.jpg",
       link: "/pomodoro-app/index.html"
     },
     {
       name: "中国A股打新提醒",
       tagline: "不错过每一次打新机会",
       description: "基于 AKShare 数据接口开发的自动化工具，抓取新股申购信息，为你提供及时的打新提醒与策略辅助。",
-      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800",
+      image: "/images/ipo.jpg",
       link: "https://github.com/kunkka1984/A-share-IPO-reminder"
     }
   ];
