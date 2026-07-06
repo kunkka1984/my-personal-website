@@ -126,12 +126,12 @@ export default function HomeClient({ articles }: { articles: ArticleMeta[] }) {
       </section>
 
       {/* 打新提醒 Widget */}
-      <section className="py-16">
+      <section id="ipo" className="py-16 scroll-mt-16">
         <IPOReminderWidget />
       </section>
 
       {/* 自制应用 */}
-      <section id="apps" className="py-20 bg-white">
+      <section id="apps" className="py-20 bg-white scroll-mt-14">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

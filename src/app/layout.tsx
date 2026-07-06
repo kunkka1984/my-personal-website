@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Inter } from "next/font/google";
+import NavBar from "@/components/NavBar";
+import CopyEmail from "@/components/CopyEmail";
 import "./globals.css";
 
 const inter = Inter({
@@ -67,34 +69,7 @@ export default function RootLayout({
   return (
     <html lang="zh">
       <body className={`${inter.variable} font-sans antialiased`}>
-        <nav className="glass-nav fixed top-0 w-full z-50 transition-all duration-300">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-12 text-xs font-medium tracking-wide text-gray-800">
-              <Link href="/" className="font-semibold hover:text-black transition-colors">
-                成本观
-              </Link>
-              <div className="flex space-x-6 sm:space-x-8">
-                <Link href="/cost" className="hover:text-black transition-colors">
-                  全成本拆解
-                </Link>
-                <Link href="/#apps" className="hover:text-black transition-colors">
-                  小工具
-                </Link>
-                <a
-                  href="https://github.com/kunkka1984"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-black transition-colors"
-                >
-                  GitHub
-                </a>
-                <a href="mailto:78521299@qq.com" className="hover:text-black transition-colors">
-                  Email
-                </a>
-              </div>
-            </div>
-          </div>
-        </nav>
+        <NavBar />
         {children}
         <footer className="bg-[#f5f5f7] py-8 text-center text-xs text-gray-500 mt-20">
           <div className="max-w-4xl mx-auto flex flex-col items-center gap-4 px-4">
@@ -110,9 +85,7 @@ export default function RootLayout({
               >
                 GitHub
               </a>
-              <a href="mailto:78521299@qq.com" className="hover:text-black transition-colors">
-                Contact Email
-              </a>
+              <CopyEmail className="hover:text-black transition-colors cursor-pointer" />
             </div>
             <p className="max-w-2xl leading-relaxed">
               本站文章为个人从业经验复盘，项目信息已脱敏，不构成投资或税务建议。
