@@ -99,7 +99,7 @@ export default function HomeClient({ articles }: { articles: ArticleMeta[] }) {
                 >
                   <div className="flex items-baseline gap-3 mb-4">
                     <span className="text-sm font-semibold text-[#0071e3]">
-                      第{a.order}篇
+                      {a.order === 0 ? "总纲" : `第${a.order}篇`}
                     </span>
                     <span className="text-xs text-[#86868b]">{a.category}</span>
                   </div>

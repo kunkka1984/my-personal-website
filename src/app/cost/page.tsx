@@ -38,7 +38,7 @@ export default function CostSeriesPage() {
             >
               <div className="flex items-baseline gap-3 mb-3">
                 <span className="text-sm font-semibold text-[#0071e3] shrink-0">
-                  第{a.order}篇
+                  {a.order === 0 ? "总纲" : `第${a.order}篇`}
                 </span>
                 <span className="text-xs text-[#86868b]">{a.category}</span>
               </div>

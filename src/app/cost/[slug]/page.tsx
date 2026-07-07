@@ -49,7 +49,9 @@ export default async function ArticlePage({
               全成本拆解系列
             </Link>
             <span className="mx-2">/</span>
-            <span>第{meta.order}篇 · {meta.category}</span>
+            <span>
+              {meta.order === 0 ? "总纲" : `第${meta.order}篇`} · {meta.category}
+            </span>
           </nav>
           <h1 className="text-3xl md:text-4xl font-semibold tracking-tight text-[#1d1d1f] leading-snug mb-4">
             {meta.title}
