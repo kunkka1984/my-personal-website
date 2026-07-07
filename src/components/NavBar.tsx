@@ -148,6 +148,13 @@ export default function NavBar() {
                 )}
               </div>
             ))}
+            <Link
+              href="/about"
+              className="hover:text-black transition-colors"
+              onClick={() => setOpen(null)}
+            >
+              关于我
+            </Link>
             <a
               href="https://github.com/kunkka1984"
               target="_blank"

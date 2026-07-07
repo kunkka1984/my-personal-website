@@ -77,6 +77,9 @@ export default function RootLayout({
               <Link href="/cost" className="hover:text-black transition-colors">
                 全成本拆解
               </Link>
+              <Link href="/about" className="hover:text-black transition-colors">
+                关于我
+              </Link>
               <a
                 href="https://github.com/kunkka1984"
                 target="_blank"
