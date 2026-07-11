@@ -1,0 +1,22 @@
+{
+  "id": 10,
+  "title": "To the Wide World",
+  "story": "Roberto returns to Brazil. Three years later, a young man stands at the airport with one ticket and one old suitcase. It is Tsubasa. He is going abroad — to Brazil, to the home of football. The journey will take one day and one night. His friends come to say goodbye. They wave and wave. Sanae smiles, but there is a tear in her eye. \"Do not cry,\" says Tsubasa. \"Distance means nothing. I will chase my dream until I reach it. That is my hope, and my future.\" Finally, the plane flies up into the clouds. A new adventure begins. Far from home, a player will grow.",
+  "words": [
+    { "w": "future", "ipa": "/ˈfjuːtʃər/", "pos": "n.", "def": "the time that will come — tomorrow, next year, and after.", "ex": "In the future, he will play for Brazil.", "mn": "《回到未来》=Back to the Future。in the future=将来。" },
+    { "w": "abroad", "ipa": "/əˈbrɔːd/", "pos": "adv.", "def": "in or to another country.", "ex": "He goes abroad to learn football.", "mn": "a+broad(宽的)→去更宽的世界=出国。go abroad / study abroad(留学)。" },
+    { "w": "airport", "ipa": "/ˈerpɔːrt/", "pos": "n.", "def": "the place where planes go up and come down.", "ex": "His friends come to the airport.", "mn": "拆开就懂:air(空中)+port(港口)→空港。这个词你坐飞机时到处能看到。" },
+    { "w": "ticket", "ipa": "/ˈtɪkɪt/", "pos": "n.", "def": "a small piece of paper that lets you go on a plane, a bus, or into a place.", "ex": "One ticket to Brazil, one way.", "mn": "球票、机票、罚单(交警给的 ticket)全是它。" },
+    { "w": "journey", "ipa": "/ˈdʒɜːrni/", "pos": "n.", "def": "a long trip from one place to another.", "ex": "The journey to Brazil takes thirty hours.", "mn": "词源:jour=一天(法语)→古时一天能走的路=旅程。对比:trip 短途,journey 长途。" },
+    { "w": "suitcase", "ipa": "/ˈsuːtkeɪs/", "pos": "n.", "def": "a big box with a handle; you put clothes in it when you travel.", "ex": "All his life is in one old suitcase.", "mn": "拆开就懂:suit(西装)+case(箱子)→装衣服的箱子=行李箱。" },
+    { "w": "wave", "ipa": "/weɪv/", "pos": "v. / n.", "def": "to move your hand from side to side to say hello or goodbye; also a line of water moving on the sea.", "ex": "They wave until the plane is small in the sky.", "mn": "一词两义:挥手/海浪——挥手的样子就是一个'浪'。微波炉=microwave(微小的波)。" },
+    { "w": "tear", "ipa": "/tɪr/", "pos": "n.", "def": "a drop of water that comes from your eye when you cry.", "ex": "A tear runs down her face.", "mn": "⚠️双身份:读 /tɪr/ 是眼泪,读 /ter/ 是'撕'。眼泪=in tears(哭着)。" },
+    { "w": "hope", "ipa": "/hoʊp/", "pos": "n. / v.", "def": "to want something good to happen and think it can happen.", "ex": "\"I hope we meet again,\" says Ryo.", "mn": "对比记:hope 觉得有戏才盼,wish 明知难成也愿。I hope so=希望如此。" },
+    { "w": "chase", "ipa": "/tʃeɪs/", "pos": "v.", "def": "to run after someone or something to catch it.", "ex": "Chase your dream like you chase the ball.", "mn": "谐音辅助(先读三遍 /tʃeɪs/):'追死'——追到底。chase the dream=追梦。" },
+    { "w": "reach", "ipa": "/riːtʃ/", "pos": "v.", "def": "to get to a place; to put out your hand to touch something.", "ex": "One day he will reach his dream.", "mn": "reach out=伸手够。到达顶峰=reach the top。比 arrive 多一层'努力够到'的味道。" },
+    { "w": "distance", "ipa": "/ˈdɪstəns/", "pos": "n.", "def": "how far it is from one place to another.", "ex": "The distance from Japan to Brazil is very big.", "mn": "dist=分开(distant 遥远的)+ance(名词)。异地恋=long-distance relationship。" },
+    { "w": "finally", "ipa": "/ˈfaɪnəli/", "pos": "adv.", "def": "after a long time; at the end.", "ex": "Finally, the plane leaves the ground.", "mn": "final(最后的,决赛)+ly。决赛=the final,大结局=the finale。" },
+    { "w": "adventure", "ipa": "/ədˈventʃər/", "pos": "n.", "def": "an exciting thing you do, often new and a little dangerous.", "ex": "A new adventure begins in Brazil.", "mn": "ad(去)+vent(来,event)→冲向未知的事件=冒险。冒险游戏就叫 Adventure Game。" },
+    { "w": "grow", "ipa": "/ɡroʊ/", "pos": "v.", "def": "to become bigger, taller, or better.", "ex": "Far from home, a player grows fast.", "mn": "grow up=长大成人。庄稼、头发、能力都用 grow。过去式 grew。" }
+  ]
+}

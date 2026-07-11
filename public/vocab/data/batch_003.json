@@ -1,0 +1,22 @@
+{
+  "id": 3,
+  "title": "The Coach from Brazil",
+  "story": "A man watches Tsubasa play. His name is Roberto. He comes from Brazil, a foreign country far away. He was a great player, but he is sick now, so he drinks and sleeps all day. That is his secret. Roberto becomes Tsubasa's coach. He teaches him to stop the ball, to turn, to fly. \"Believe in your dream,\" he says. \"Never forget it. Remember: a true player never stops.\" One day Roberto must leave Japan and return home. Or will he stay? Tsubasa does not know.",
+  "words": [
+    { "w": "coach", "ipa": "/koʊtʃ/", "pos": "n.", "def": "a person whose job is to teach people a sport.", "ex": "Roberto is the best coach for Tsubasa.", "mn": "本义是'马车'→把学生从不会'载'到会,就是教练。" },
+    { "w": "teach", "ipa": "/tiːtʃ/", "pos": "v.", "def": "to help someone learn something.", "ex": "Roberto teaches Tsubasa a new kick.", "mn": "teacher 就是 teach+er(的人)。过去式 taught。learn 是学,teach 是教,方向相反。" },
+    { "w": "believe", "ipa": "/bɪˈliːv/", "pos": "v.", "def": "to think that something is true or real.", "ex": "\"I believe you can do it,\" says Roberto.", "mn": "拆开记:be+lie+ve——⚠️中间藏着一个 lie(谎言),信不信由你。believe in sb=信任某人。" },
+    { "w": "dream", "ipa": "/driːm/", "pos": "n. / v.", "def": "pictures in your head when you sleep; a thing you want very much to do one day.", "ex": "His dream is to play in Brazil.", "mn": "一词两义:睡觉做的梦和人生的梦想,中英文想法一模一样。" },
+    { "w": "drink", "ipa": "/drɪŋk/", "pos": "v. / n.", "def": "to take water, tea, or beer into your mouth and swallow it.", "ex": "Roberto drinks too much because he is sad.", "mn": "drink-drank-drunk 三段变化;drunk 也是'喝醉的'。" },
+    { "w": "sick", "ipa": "/sɪk/", "pos": "adj.", "def": "not well in your body; ill.", "ex": "Roberto is sick; his eyes are getting bad.", "mn": "谐音辅助(先读三遍 /sɪk/):'死克'——病得难受。be sick 也可指恶心想吐。" },
+    { "w": "secret", "ipa": "/ˈsiːkrət/", "pos": "n. / adj.", "def": "something you do not tell other people.", "ex": "His sick eyes are a secret. He tells no one.", "mn": "词根:se(分开)+cret(分辨)→分开放、不给人看的=秘密。secretary(秘书)=管秘密的人。" },
+    { "w": "foreign", "ipa": "/ˈfɔːrən/", "pos": "adj.", "def": "from another country, not your own.", "ex": "Roberto speaks a foreign language at home.", "mn": "⚠️拼写坑:g 不发音。for(外)+eign→门外的=外国的。foreigner=外国人。" },
+    { "w": "country", "ipa": "/ˈkʌntri/", "pos": "n.", "def": "a land with its own people and rules, like Japan, China, or Brazil.", "ex": "Brazil is a big country, famous for football.", "mn": "⚠️发音坑:ou 读 /ʌ/ 不读 /aʊ/。另一个意思是'乡下'(country music 乡村音乐)。" },
+    { "w": "return", "ipa": "/rɪˈtɜːrn/", "pos": "v.", "def": "to go back, or to give something back.", "ex": "Roberto must return to Brazil soon.", "mn": "词根:re(回)+turn(转)→转回去=返回。键盘上的回车键就叫 Return。" },
+    { "w": "stay", "ipa": "/steɪ/", "pos": "v.", "def": "to not leave; to keep being in a place.", "ex": "\"Please stay in Japan!\" says Tsubasa.", "mn": "宾馆'入住'也是 stay。stay home=待在家。" },
+    { "w": "leave", "ipa": "/liːv/", "pos": "v.", "def": "to go away from a place or a person.", "ex": "The ship leaves at nine in the morning.", "mn": "和 stay 是反义词。过去式 left(也是'左边'——飞机起飞后机场被留在了左后方,联想一下)。" },
+    { "w": "forget", "ipa": "/fərˈɡet/", "pos": "v.", "def": "to not remember something.", "ex": "Never forget your dream.", "mn": "for(离开)+get(拿到)→拿到的东西又丢了=忘记。过去式 forgot。" },
+    { "w": "remember", "ipa": "/rɪˈmembər/", "pos": "v.", "def": "to keep something in your head and not lose it.", "ex": "Tsubasa remembers every word Roberto says.", "mn": "re(再)+member(记)→一遍遍再记=记住。和 forget 一对反义词。" },
+    { "w": "true", "ipa": "/truː/", "pos": "adj.", "def": "real; not a lie.", "ex": "\"A true player never gives up.\"", "mn": "truth(真相)的形容词。come true=(梦想)成真——Dreams come true!" }
+  ]
+}

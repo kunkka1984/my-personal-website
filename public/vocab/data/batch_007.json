@@ -1,0 +1,22 @@
+{
+  "id": 7,
+  "title": "The Hurt Ankle",
+  "story": "In a hard game, Tsubasa falls. He twists his ankle, and his knee hits the ground. \"It hurts,\" he says, \"but I can play!\" The pain is big. The nurse at school looks at his leg and gives him medicine. \"Be careful,\" she says. \"Playing now is dangerous. The ankle needs time to heal.\" His mother worries all night. Sanae almost cries. But Roberto comforts them: \"Be patient. He is young and strong. He will recover before the next match.\" And he is right — ten days later, Tsubasa runs again.",
+  "words": [
+    { "w": "hurt", "ipa": "/hɜːrt/", "pos": "v. / adj.", "def": "to feel pain, or to give pain to a part of the body.", "ex": "My leg hurts when I run.", "mn": "过去式还是 hurt,不变。心也会 hurt(伤心)。" },
+    { "w": "pain", "ipa": "/peɪn/", "pos": "n.", "def": "the bad feeling in your body when you are hurt or sick.", "ex": "He plays on, but the pain is big.", "mn": "No pain, no gain(不吃苦,没收获)——健身房墙上最爱写的一句。" },
+    { "w": "knee", "ipa": "/niː/", "pos": "n.", "def": "the middle part of your leg, where it bends.", "ex": "His knee hits the ground.", "mn": "⚠️发音坑:k 不发音,读'尼'。膝盖跪下发出'尼——'。kn 家族:know, knife 的 k 都不发音。" },
+    { "w": "ankle", "ipa": "/ˈæŋkl/", "pos": "n.", "def": "the thin part of your leg, just over your foot.", "ex": "He twists his ankle in the game.", "mn": "踢球最容易伤的地方。联想:ankle 和 angle(角度)长得像——脚踝就是脚上的'转角'。" },
+    { "w": "twist", "ipa": "/twɪst/", "pos": "v.", "def": "to turn something round; to hurt a part of your body by turning it the wrong way.", "ex": "Do not twist your ankle on the wet ground.", "mn": "麻花就叫 twist——拧、扭。扭伤脚=twist the ankle。" },
+    { "w": "nurse", "ipa": "/nɜːrs/", "pos": "n.", "def": "a person whose job is to take care of sick people.", "ex": "The school nurse looks at his leg.", "mn": "对比记:doctor 看病,nurse 照顾。护士节的'护士'就是这个词。" },
+    { "w": "medicine", "ipa": "/ˈmedɪsn/", "pos": "n.", "def": "something you eat or drink when you are sick, to get well.", "ex": "Take the medicine two times a day.", "mn": "medi=治(medical 医疗的)。吃药说 take medicine,不用 eat。" },
+    { "w": "careful", "ipa": "/ˈkerfl/", "pos": "adj.", "def": "thinking about what you do, so nothing bad happens.", "ex": "Be careful! The ground is wet.", "mn": "care(在意)+ful(满满的)→满心在意=小心。Be careful! 是最常用的提醒话。" },
+    { "w": "dangerous", "ipa": "/ˈdeɪndʒərəs/", "pos": "adj.", "def": "able to hurt you; not safe.", "ex": "Playing with a hurt ankle is dangerous.", "mn": "danger(危险)+ous(…的)。危险标志上写的就是 DANGER。反义词 safe。" },
+    { "w": "heal", "ipa": "/hiːl/", "pos": "v.", "def": "to become well again after a hurt.", "ex": "The ankle needs two weeks to heal.", "mn": "health(健康)的一家人:heal 好了就 healthy 了。和 heel(脚后跟)同音——脚后跟好得快。" },
+    { "w": "worry", "ipa": "/ˈwɜːri/", "pos": "v. / n.", "def": "to keep thinking that something bad may happen.", "ex": "His mother worries about him all night.", "mn": "Don't worry, be happy 🎵——那首歌你多半听过。worry about=担心某事。" },
+    { "w": "cry", "ipa": "/kraɪ/", "pos": "v.", "def": "to have water come from your eyes because you are sad or hurt; to shout.", "ex": "Sanae almost cries at the hospital.", "mn": "一词两义:哭/喊。婴儿的哭和喊本来就是一回事。" },
+    { "w": "comfort", "ipa": "/ˈkʌmfərt/", "pos": "v. / n.", "def": "to make a sad person feel better.", "ex": "Roberto comforts her with kind words.", "mn": "com(共同)+fort(力量,fortress 堡垒)→给人力量=安慰。comfortable(舒服的)是它的形容词。" },
+    { "w": "patient", "ipa": "/ˈpeɪʃnt/", "pos": "adj. / n.", "def": "able to wait without getting angry; also a sick person at the doctor's.", "ex": "Be patient — the leg needs time.", "mn": "一词两义很妙:病人(n.)最需要的就是耐心(adj.)。Be patient=别急。" },
+    { "w": "recover", "ipa": "/rɪˈkʌvər/", "pos": "v.", "def": "to get well again after being sick or hurt.", "ex": "He recovers before the final match.", "mn": "re(重新)+cover(盖上)→伤口重新长好盖上=康复。手机'恢复出厂设置'也是 recover 家族。" }
+  ]
+}

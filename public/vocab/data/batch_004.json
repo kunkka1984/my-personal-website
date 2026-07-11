@@ -1,0 +1,22 @@
+{
+  "id": 4,
+  "title": "The First Match",
+  "story": "Today is the first big match. A crowd of people comes to watch, and the noise is very loud. Tsubasa feels nervous — his legs shake. \"Be calm,\" says Roberto. \"Play like you play on the street.\" The players wear their white shirts and run out. The whistle sounds, and the game begins. Tsubasa passes the ball to Ryo, runs, gets it back — and scores! At half time, the boys take a break and drink water. Everyone is tired but happy. The crowd cheers: \"Nankatsu! Nankatsu!\"",
+  "words": [
+    { "w": "match", "ipa": "/mætʃ/", "pos": "n.", "def": "a game between two teams or two players.", "ex": "The match starts at ten o'clock.", "mn": "一词多义:比赛/火柴/相配。比赛=两队'配对'打一场,记'配对'这个核心就都通了。" },
+    { "w": "wear", "ipa": "/wer/", "pos": "v.", "def": "to have clothes or shoes on your body.", "ex": "The team wears white shirts.", "mn": "⚠️易混:wear 是'穿着'的状态,put on 是'穿上'的动作。过去式 wore。" },
+    { "w": "shirt", "ipa": "/ʃɜːrt/", "pos": "n.", "def": "a piece of clothes you wear on the top part of your body.", "ex": "Tsubasa's shirt has the number 10.", "mn": "T-shirt 你早认识——T 形的 shirt。球衣号码就印在 shirt 上。" },
+    { "w": "whistle", "ipa": "/ˈwɪsl/", "pos": "n. / v.", "def": "a small thing you blow to make a high sound; the sound itself.", "ex": "The whistle sounds — the game begins!", "mn": "⚠️发音坑:t 不发音,读'威思欧'。拟声词,吹起来就是这个音。" },
+    { "w": "begin", "ipa": "/bɪˈɡɪn/", "pos": "v.", "def": "to start.", "ex": "The match begins in the morning.", "mn": "和 start 同义,更书面。begin-began-begun;beginner=初学者。" },
+    { "w": "pass", "ipa": "/pæs/", "pos": "v.", "def": "to kick or throw the ball to a player on your team; to go past something.", "ex": "Tsubasa passes the ball to Ryo.", "mn": "足球里天天说的'传球'就是 pass;考试'通过'也是 pass——都是'过去了'。" },
+    { "w": "score", "ipa": "/skɔːr/", "pos": "v. / n.", "def": "to get a goal or a point in a game; the numbers that show who is winning.", "ex": "Tsubasa scores two goals in one match!", "mn": "看球必备:比分=score,得分=score a goal。" },
+    { "w": "half", "ipa": "/hæf/", "pos": "n.", "def": "one of two same parts of something.", "ex": "At half time they drink water.", "mn": "⚠️发音坑:l 不发音。足球上半场=first half,下半场=second half。" },
+    { "w": "tired", "ipa": "/ˈtaɪərd/", "pos": "adj.", "def": "needing rest or sleep.", "ex": "After the match, everyone is tired.", "mn": "tire 是轮胎——轮胎跑久了会没气,人跑久了会没电=累。" },
+    { "w": "break", "ipa": "/breɪk/", "pos": "n. / v.", "def": "a short time to rest; to make something go into pieces.", "ex": "They take a short break at half time.", "mn": "一词两义:打碎/休息——把长时间'打断'一下就是休息。take a break=歇一会。" },
+    { "w": "cheer", "ipa": "/tʃɪr/", "pos": "v. / n.", "def": "to shout happy words to help your team.", "ex": "The crowd cheers when Tsubasa scores.", "mn": "干杯说 Cheers!,啦啦队叫 cheerleader——都是给人打气。" },
+    { "w": "crowd", "ipa": "/kraʊd/", "pos": "n.", "def": "a lot of people together in one place.", "ex": "A big crowd watches the match.", "mn": "联想:crowd 里有 crow(乌鸦)——一大群乌鸦乌泱泱的=人群。" },
+    { "w": "noise", "ipa": "/nɔɪz/", "pos": "n.", "def": "a loud sound, often one you do not like.", "ex": "The noise of the crowd is like the sea.", "mn": "noisy(吵闹的)的名词。对比:sound 是中性的'声音',noise 偏'噪音'。" },
+    { "w": "nervous", "ipa": "/ˈnɜːrvəs/", "pos": "adj.", "def": "a little afraid before something big happens.", "ex": "Tsubasa is nervous before his first match.", "mn": "nerve=神经→神经绷紧了=紧张。上场前、面试前的那种感觉。" },
+    { "w": "calm", "ipa": "/kɑːm/", "pos": "adj. / v.", "def": "quiet and not afraid; not moving much.", "ex": "\"Stay calm and play your game.\"", "mn": "⚠️发音坑:l 不发音,读'卡姆'。calm down=冷静下来。和 nervous 一对反义词。" }
+  ]
+}

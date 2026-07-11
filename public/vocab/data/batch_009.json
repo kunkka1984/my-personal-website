@@ -1,0 +1,22 @@
+{
+  "id": 9,
+  "title": "The Big Game Plan",
+  "story": "Before the final, Roberto draws on a small board. \"Listen. First we attack from the left. When they have the ball, everyone must defend. From a corner kick, change the direction of the ball fast — their goalkeeper is slow. Speed wins games: be quick, turn before they touch you, and jump higher than everyone. Follow Tsubasa; he will lead the attack. Then wait for your chance. At the right moment, one brilliant pass will surprise them. Score first, and we celebrate at the end!\" The boys shout together: \"YES, COACH!\"",
+  "words": [
+    { "w": "attack", "ipa": "/əˈtæk/", "pos": "v. / n.", "def": "to move forward and try to score; to try to hurt someone.", "ex": "Nankatsu attacks from the first minute.", "mn": "谐音辅助(先读三遍 /əˈtæk/):'俄塔克'——冲塔进攻。游戏里 ATK=攻击力,就是它的缩写。" },
+    { "w": "defend", "ipa": "/dɪˈfend/", "pos": "v.", "def": "to try to stop the other team from scoring; to keep someone safe.", "ex": "Everyone runs back to defend.", "mn": "de(防)+fend(挡,fence 栅栏)→立起栅栏挡住=防守。后卫=defender。和 attack 一对。" },
+    { "w": "corner", "ipa": "/ˈkɔːrnər/", "pos": "n.", "def": "the place where two lines or two walls meet.", "ex": "Tsubasa takes the corner kick.", "mn": "角球=corner kick。街角=street corner。corn(角)+er。" },
+    { "w": "direction", "ipa": "/dəˈrekʃn/", "pos": "n.", "def": "the way you go or look — left, right, up, or down.", "ex": "He changes the direction of the ball with one touch.", "mn": "direct(指向)+ion(名词)→指的那个方向。导演=director,给戏'指方向'的人。" },
+    { "w": "speed", "ipa": "/spiːd/", "pos": "n.", "def": "how fast something moves.", "ex": "No one can catch his speed.", "mn": "《速度与激情》英文名开头就是 Speed 家族(speed=速度)。网速=internet speed。" },
+    { "w": "quick", "ipa": "/kwɪk/", "pos": "adj.", "def": "fast; using little time.", "ex": "A quick pass, and the ball is in!", "mn": "Be quick!=快点!对比:fast 偏速度快,quick 偏反应快、时间短。" },
+    { "w": "turn", "ipa": "/tɜːrn/", "pos": "v. / n.", "def": "to move your body round; to change direction.", "ex": "He turns fast, and the defender falls.", "mn": "转身、转弯、翻页(turn the page)都是 turn。It's your turn=轮到你了('转'到你了)。" },
+    { "w": "jump", "ipa": "/dʒʌmp/", "pos": "v.", "def": "to push your body up into the air with your legs.", "ex": "Genzo jumps and catches the high ball.", "mn": "谐音辅助(先读三遍 /dʒʌmp/):'蹦'的英文感觉——JUMP 四个字母都往上蹦。跳水=diving,跳高=high jump。" },
+    { "w": "follow", "ipa": "/ˈfɑːloʊ/", "pos": "v.", "def": "to go behind someone; to do what someone says.", "ex": "Follow me — I know the way.", "mn": "刷手机'关注'就是 follow,粉丝=follower。跟着走+跟着做,两个意思都常用。" },
+    { "w": "lead", "ipa": "/liːd/", "pos": "v.", "def": "to go first and show others the way; to be the number one.", "ex": "Tsubasa leads the attack.", "mn": "leader(队长/领导)=lead+er 带头的人。过去式 led。和 follow 一对:一个带头,一个跟随。" },
+    { "w": "chance", "ipa": "/tʃæns/", "pos": "n.", "def": "a time when you can do something good; also how possible something is.", "ex": "Wait for your chance, then shoot.", "mn": "中文早就借走了:'给我一个 chance'。足球解说里的'机会球'就是 chance。" },
+    { "w": "moment", "ipa": "/ˈmoʊmənt/", "pos": "n.", "def": "a very short time.", "ex": "At the last moment, he passes the ball.", "mn": "朋友圈英文版就叫 Moments(一个个小瞬间)。Wait a moment=稍等。" },
+    { "w": "brilliant", "ipa": "/ˈbrɪljənt/", "pos": "adj.", "def": "very very good; very bright.", "ex": "What a brilliant pass!", "mn": "brill=亮(钻石的光)→亮瞎眼的好。英国人的口头禅:Brilliant!=太棒了!" },
+    { "w": "surprise", "ipa": "/sərˈpraɪz/", "pos": "n. / v.", "def": "something you do not think will happen; to make someone feel this.", "ex": "The quick shoot surprises the goalkeeper.", "mn": "生日派对上大家喊的就是:Surprise!(惊不惊喜)。sur(突然)+prise(抓住)→突然抓住你。" },
+    { "w": "celebrate", "ipa": "/ˈselɪbreɪt/", "pos": "v.", "def": "to do something happy because of a good thing, like a win or a birthday.", "ex": "They celebrate the win with a big dinner.", "mn": "celebrity(名人)是他的亲戚——天天被人庆祝的人。进球庆祝动作=goal celebration。" }
+  ]
+}

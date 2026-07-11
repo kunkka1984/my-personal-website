@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "targetWords": 3000,
+  "batches": [
+    { "id": 1, "file": "batch_001.json", "title": "A New Kid in Town" },
+    { "id": 2, "file": "batch_002.json", "title": "The Proud Goalkeeper" },
+    { "id": 3, "file": "batch_003.json", "title": "The Coach from Brazil" },
+    { "id": 4, "file": "batch_004.json", "title": "The First Match" },
+    { "id": 5, "file": "batch_005.json", "title": "Morning Training" },
+    { "id": 6, "file": "batch_006.json", "title": "Real Friends" },
+    { "id": 7, "file": "batch_007.json", "title": "The Hurt Ankle" },
+    { "id": 8, "file": "batch_008.json", "title": "Rain on the Ground" },
+    { "id": 9, "file": "batch_009.json", "title": "The Big Game Plan" },
+    { "id": 10, "file": "batch_010.json", "title": "To the Wide World" }
+  ]
+}

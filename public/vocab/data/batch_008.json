@@ -1,0 +1,22 @@
+{
+  "id": 8,
+  "title": "Rain on the Ground",
+  "story": "The weather is bad today. Black clouds sit low over the town, and a storm is coming. The wind sings in the trees. Rain falls and falls; the ground turns to mud. Players slip and slide everywhere — their shirts are wet, their shoes are heavy. \"Will they cancel the match?\" asks Sanae under her umbrella. \"No,\" says Roberto. \"They will continue. Rain is a good teacher.\" Then, suddenly, the rain stops. The sun begins to shine, and the ground slowly gets dry. Football weather again!",
+  "words": [
+    { "w": "weather", "ipa": "/ˈweðər/", "pos": "n.", "def": "how it is outside — sun, rain, wind, hot or cold.", "ex": "The weather is bad for football today.", "mn": "聊天万能开场:Nice weather!(天气不错)。⚠️和 whether(是否)同音。" },
+    { "w": "cloud", "ipa": "/klaʊd/", "pos": "n.", "def": "a white or gray thing in the sky; rain comes from it.", "ex": "Black clouds mean rain is coming.", "mn": "云存储、云计算的'云'就是 cloud——你的照片存在'云'上。cloudy=多云的。" },
+    { "w": "storm", "ipa": "/stɔːrm/", "pos": "n.", "def": "very bad weather with strong wind and much rain.", "ex": "The storm breaks trees on the street.", "mn": "头脑风暴=brainstorm,就是脑子里刮 storm。" },
+    { "w": "wind", "ipa": "/wɪnd/", "pos": "n.", "def": "air that moves fast outside.", "ex": "The wind takes the ball away.", "mn": "window(窗)开头就是 wind——窗就是给风开的洞。windy=刮风的。" },
+    { "w": "mud", "ipa": "/mʌd/", "pos": "n.", "def": "soft wet earth on the ground.", "ex": "His white shirt is brown with mud.", "mn": "谐音辅助(先读三遍 /mʌd/):'马德'——马蹄踩出来的烂泥。muddy=泥泞的。" },
+    { "w": "slip", "ipa": "/slɪp/", "pos": "v.", "def": "to fall or almost fall on something wet or smooth.", "ex": "He slips on the wet grass.", "mn": "sl- 家族都很'滑':slip 滑倒、slide 滑行、slippery 滑的。拖鞋=slippers(容易打滑的鞋)。" },
+    { "w": "slide", "ipa": "/slaɪd/", "pos": "v. / n.", "def": "to move easily over something smooth; also the thing children play on in a park.", "ex": "He slides on the mud to stop the ball.", "mn": "滑梯就叫 slide;PPT 的一页也叫 slide(一张张'滑'过去)。足球铲球=sliding tackle。" },
+    { "w": "wet", "ipa": "/wet/", "pos": "adj.", "def": "with water on it or in it; not dry.", "ex": "Their shirts are wet from the rain.", "mn": "和 water(水)同一家。湿纸巾包装上就写着 wet tissue。" },
+    { "w": "dry", "ipa": "/draɪ/", "pos": "adj. / v.", "def": "with no water; to take the water out of something.", "ex": "The ground gets dry in the sun.", "mn": "吹风机=hair dryer(把头发弄 dry 的机器)。和 wet 一对反义词。" },
+    { "w": "shine", "ipa": "/ʃaɪn/", "pos": "v.", "def": "to give out light, like the sun.", "ex": "The sun shines after the storm.", "mn": "sunshine=阳光。shiny=亮闪闪的。Rise and shine!=太阳晒屁股啦,起床!" },
+    { "w": "ground", "ipa": "/ɡraʊnd/", "pos": "n.", "def": "what you stand on outside; the earth under your feet.", "ex": "The ball stops dead on the wet ground.", "mn": "足球场=football ground,操场=playground(play+ground 玩耍的地面)。" },
+    { "w": "cancel", "ipa": "/ˈkænsl/", "pos": "v.", "def": "to say that something planned will not happen.", "ex": "They do not cancel the match.", "mn": "手机 App 里的'取消'按钮就是 Cancel,你天天见。航班取消=flight canceled。" },
+    { "w": "continue", "ipa": "/kənˈtɪnjuː/", "pos": "v.", "def": "to keep doing something; to not stop.", "ex": "The game continues in the rain.", "mn": "游戏死了以后屏幕上问你:CONTINUE?(继续吗)——就是它。" },
+    { "w": "umbrella", "ipa": "/ʌmˈbrelə/", "pos": "n.", "def": "a thing you hold over your head so the rain does not make you wet.", "ex": "Sanae watches the game under her umbrella.", "mn": "词源:umbra=影子(拉丁语)→制造影子的小东西=伞。最早是遮太阳的。" },
+    { "w": "suddenly", "ipa": "/ˈsʌdnli/", "pos": "adv.", "def": "very fast, when you do not think it will happen.", "ex": "Suddenly, the rain stops.", "mn": "sudden(突然的)+ly(副词尾巴)。故事书里的转折之王:Suddenly,...(突然……)。" }
+  ]
+}

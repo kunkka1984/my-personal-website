@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "title": "A New Kid in Town",
+  "story": "Tsubasa and his mother arrive in a new city. They move to a small house on a quiet street. Tsubasa carries his ball everywhere, like a friend. Every day he kicks the ball against the wall of the garden. That is his practice. One day the ball flies onto the road. A big truck hits it — but Tsubasa is lucky. The ball saves his life! He stands up, alone on the street, and shouts to the sky: \"I decide today! I will become a famous player. I promise!\"",
+  "words": [
+    { "w": "arrive", "ipa": "/əˈraɪv/", "pos": "v.", "def": "to get to a place at the end of a trip.", "ex": "Tsubasa arrives in the new city with his mother.", "mn": "词源:a+rive,rive=river(河)。古时坐船,船靠河岸=到达。" },
+    { "w": "move", "ipa": "/muːv/", "pos": "v.", "def": "to go to live in a new place; to change place.", "ex": "They move to a small house near the school.", "mn": "联想:move 的 m 像两个箱子搬来搬去→搬家、移动。" },
+    { "w": "street", "ipa": "/striːt/", "pos": "n.", "def": "a road in a town, with houses on the sides.", "ex": "The kids play football on the street.", "mn": "对比记:street 比 road 多了房子。str- 开头常和'直'有关(straight 直的)→笔直的街。" },
+    { "w": "kick", "ipa": "/kɪk/", "pos": "v.", "def": "to hit something with your foot.", "ex": "He kicks the ball against the wall a hundred times.", "mn": "拟声:kick 读起来又短又快,就像踢球'嗑'的一声。" },
+    { "w": "wall", "ipa": "/wɔːl/", "pos": "n.", "def": "the hard side of a room, a house, or a garden; it stands up high.", "ex": "The ball hits the wall and comes back.", "mn": "联想:W 像墙上的锯齿,all 全部→把全部挡住的东西=墙。" },
+    { "w": "lucky", "ipa": "/ˈlʌki/", "pos": "adj.", "def": "having good things happen to you by chance.", "ex": "Tsubasa is lucky: the ball stops the truck.", "mn": "luck(运气)+y(形容词尾巴,'…的')→有运气的。名词 luck,好运=good luck。" },
+    { "w": "save", "ipa": "/seɪv/", "pos": "v.", "def": "to stop someone from danger; to keep money to use later.", "ex": "The ball saves his life.", "mn": "一词两用:救命是 save,存钱也是 save——都是'留住'。守门员扑救也叫 save!" },
+    { "w": "practice", "ipa": "/ˈpræktɪs/", "pos": "n. / v.", "def": "doing something many times, so you get better at it.", "ex": "Kicking the wall is his practice every day.", "mn": "pract=做(practical 实际的)→反复做=练习。一万小时定律的那个词。" },
+    { "w": "promise", "ipa": "/ˈprɑːmɪs/", "pos": "v. / n.", "def": "to say you will really do something, and mean it.", "ex": "\"I promise, Mom. I will be careful.\"", "mn": "词根:pro(向前)+mise(送出)→把话送出去收不回=承诺。" },
+    { "w": "become", "ipa": "/bɪˈkʌm/", "pos": "v.", "def": "to begin to be something.", "ex": "He wants to become the best player in the world.", "mn": "be(是)+come(来)→'来到是'的状态=变成。过去式 became。" },
+    { "w": "famous", "ipa": "/ˈfeɪməs/", "pos": "adj.", "def": "known by many, many people.", "ex": "Pelé is a famous player from Brazil.", "mn": "fame(名声)+ous(多…的)→名声很多=有名。" },
+    { "w": "carry", "ipa": "/ˈkæri/", "pos": "v.", "def": "to hold something and take it with you.", "ex": "Tsubasa carries his ball everywhere, even to bed.", "mn": "car(车)+ry→像小车一样载着东西走=携带。" },
+    { "w": "decide", "ipa": "/dɪˈsaɪd/", "pos": "v.", "def": "to choose after thinking about it.", "ex": "He decides to join the school team.", "mn": "词根:de(下)+cide(切,scissors 剪刀的 cis)→一刀切下去,不再犹豫=决定。" },
+    { "w": "alone", "ipa": "/əˈloʊn/", "pos": "adj.", "def": "with no other people.", "ex": "He is alone on the street, but not afraid.", "mn": "真词源:all+one→全部就一个人=独自。" },
+    { "w": "shout", "ipa": "/ʃaʊt/", "pos": "v.", "def": "to say something very loudly.", "ex": "He shouts: \"I will be the best!\"", "mn": "联想:嘴张大发 /aʊ/ 的音本身就像在喊。out 在里面→喊'出'来。" }
+  ]
+}

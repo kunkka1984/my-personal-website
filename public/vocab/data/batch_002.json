@@ -1,0 +1,22 @@
+{
+  "id": 2,
+  "title": "The Proud Goalkeeper",
+  "story": "Genzo is a rich boy and a proud goalkeeper. He lives in a big house behind a tall gate. He is strong, and he thinks other players are weak. Tsubasa writes him a letter: \"Play a game with me!\" He throws the letter over the gate. Then he waits for the answer. Genzo laughs: \"A game? With a new kid?\" He wants to refuse. But he is angry when his friends say, \"Maybe you will lose!\" So he accepts. \"I catch every ball,\" he says. \"I never miss.\"",
+  "words": [
+    { "w": "proud", "ipa": "/praʊd/", "pos": "adj.", "def": "feeling that you are very good, or feeling happy about what you did.", "ex": "Genzo is proud: \"No ball can pass me!\"", "mn": "联想:胸挺得高高的发 /praʊ/ 的音→骄傲。名词是 pride(狮子王的 Pride Rock 荣耀石)。" },
+    { "w": "rich", "ipa": "/rɪtʃ/", "pos": "adj.", "def": "having a lot of money.", "ex": "Genzo's family is rich; his house is very big.", "mn": "反义词捆着记:rich 有钱 ↔ poor 穷。" },
+    { "w": "gate", "ipa": "/ɡeɪt/", "pos": "n.", "def": "a door in a wall or fence, outside a building.", "ex": "The gate of Genzo's house is tall and black.", "mn": "对比记:door 是屋里的门,gate 是院子外的大门。登机口也叫 gate。" },
+    { "w": "letter", "ipa": "/ˈletər/", "pos": "n.", "def": "a piece of paper with words on it, that you send to someone; also one sign like A, B, or C.", "ex": "Tsubasa writes a letter to Genzo.", "mn": "一词两义:信,也指'字母'——因为信就是一堆字母写成的。" },
+    { "w": "accept", "ipa": "/əkˈsept/", "pos": "v.", "def": "to say yes to something.", "ex": "Genzo accepts the game at last.", "mn": "词根:ac(去)+cept(拿,capture 抓)→伸手拿过来=接受。" },
+    { "w": "refuse", "ipa": "/rɪˈfjuːz/", "pos": "v.", "def": "to say no to something.", "ex": "At first he wants to refuse.", "mn": "词根:re(回)+fuse(倒)→把东西倒回去=拒绝。和 accept 是一对反义词。" },
+    { "w": "catch", "ipa": "/kætʃ/", "pos": "v.", "def": "to take and hold something that is moving.", "ex": "The goalkeeper catches the ball with two hands.", "mn": "联想:cat(猫)+ch→猫扑东西最会'抓、接'。过去式 caught。" },
+    { "w": "throw", "ipa": "/θroʊ/", "pos": "v.", "def": "to make something fly from your hand through the air.", "ex": "He throws the letter over the gate.", "mn": "和 catch 捆着记:一个扔一个接。过去式 threw。" },
+    { "w": "miss", "ipa": "/mɪs/", "pos": "v.", "def": "to not catch, not hit, or not see something; to feel sad because someone is not with you.", "ex": "\"I never miss a ball,\" says Genzo.", "mn": "一词两义:没接住=miss,想念也=miss——人不在身边,就是'没抓住'他。" },
+    { "w": "angry", "ipa": "/ˈæŋɡri/", "pos": "adj.", "def": "feeling very not happy with someone, and maybe wanting to shout.", "ex": "Genzo is angry when they laugh at him.", "mn": "anger(怒气)+y→满是怒气的。发音像'安格瑞',眉毛拧起来。" },
+    { "w": "laugh", "ipa": "/læf/", "pos": "v.", "def": "to make a sound with your mouth because something is funny.", "ex": "Genzo laughs: \"You? Play with me?\"", "mn": "⚠️拼写坑:gh 发 /f/ 音。笑出声是 laugh,微笑不出声是 smile。" },
+    { "w": "strong", "ipa": "/strɔːŋ/", "pos": "adj.", "def": "having a lot of power in your body.", "ex": "Genzo's hands are big and strong.", "mn": "strength 是它的名词。str- 家族:strong 壮、strict 严、struggle 搏斗——都很'用力'。" },
+    { "w": "weak", "ipa": "/wiːk/", "pos": "adj.", "def": "not strong.", "ex": "\"New kids are weak,\" thinks Genzo. He is wrong.", "mn": "谐音辅助(先读三遍 /wiːk/):'萎克'——萎了,没劲=弱。和 week(星期)同音不同字。" },
+    { "w": "wait", "ipa": "/weɪt/", "pos": "v.", "def": "to stay in a place until something happens.", "ex": "Tsubasa waits for the answer at the gate.", "mn": "wait for sb/sth 等某人某事。服务员 waiter=等着为你服务的人。" },
+    { "w": "answer", "ipa": "/ˈænsər/", "pos": "n. / v.", "def": "what you say back when someone asks you something.", "ex": "Two days later, the answer comes: \"OK. One game.\"", "mn": "⚠️发音坑:w 不发音。question(问题)↔answer(回答),一对。" }
+  ]
+}

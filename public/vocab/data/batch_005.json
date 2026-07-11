@@ -1,0 +1,22 @@
+{
+  "id": 5,
+  "title": "Morning Training",
+  "story": "Tsubasa wakes up early, at five o'clock, when the sky is still dark. First, exercise: he runs up the hill three times. Then he works on a new skill — stopping the ball with his chest. To improve, there is only one way: repeat it. He repeats it a hundred times, until his legs say no. Sweat runs down his face, and he needs his towel. After a short rest, he takes a deep breath and starts to count again: \"Ninety-eight... ninety-nine... one hundred!\" His muscles hurt, but he smiles. \"Finish! Now, breakfast!\"",
+  "words": [
+    { "w": "early", "ipa": "/ˈɜːrli/", "pos": "adj. / adv.", "def": "before the usual time; near the start of the day.", "ex": "He wakes up early, at five o'clock.", "mn": "ear(耳朵)+ly→早起的鸟儿竖着耳朵。反义词 late(晚)。" },
+    { "w": "wake", "ipa": "/weɪk/", "pos": "v.", "def": "to stop sleeping and open your eyes.", "ex": "Tsubasa wakes up before the sun.", "mn": "wake up 常连用。过去式 woke。闹钟的工作就是 wake you up。" },
+    { "w": "exercise", "ipa": "/ˈeksərsaɪz/", "pos": "n. / v.", "def": "moving your body to make it strong; a small piece of work to help you learn.", "ex": "Morning exercise makes his legs strong.", "mn": "一词两义:锻炼/练习题——都是'反复操练'。do exercise=锻炼,do exercises=做习题。" },
+    { "w": "skill", "ipa": "/skɪl/", "pos": "n.", "def": "something you can do well after you learn and practice it.", "ex": "Stopping the ball is a hard skill.", "mn": "游戏里的'技能'就是 skill。skilled worker=熟练工。" },
+    { "w": "improve", "ipa": "/ɪmˈpruːv/", "pos": "v.", "def": "to become better, or to make something better.", "ex": "His English improves a little every day.", "mn": "im(使)+prove(好,proof 证明自己)→让自己更好=提高。学习类文章高频词。" },
+    { "w": "repeat", "ipa": "/rɪˈpiːt/", "pos": "v.", "def": "to do or say something again.", "ex": "Repeat it a hundred times, and it is yours.", "mn": "词根:re(再)+peat→再来一遍。复读机按钮、说'请再说一遍'都是 repeat。" },
+    { "w": "hundred", "ipa": "/ˈhʌndrəd/", "pos": "num.", "def": "the number 100.", "ex": "One hundred kicks before breakfast.", "mn": "百分数 percent 的 cent 也是 100(一美元=100 cents)。two hundred 不加 s。" },
+    { "w": "until", "ipa": "/ənˈtɪl/", "pos": "prep. / conj.", "def": "up to a time; before that time does not stop.", "ex": "He practices until it is dark.", "mn": "un+till,till 也是'直到'。记口诀:not...until=直到…才。" },
+    { "w": "sweat", "ipa": "/swet/", "pos": "n. / v.", "def": "water that comes out of your skin when you are hot or you work hard.", "ex": "Sweat runs down his face like rain.", "mn": "⚠️发音坑:ea 读 /e/ 不读 /iː/。sweater(毛衣)=让你出汗的衣服,一下就记住了。" },
+    { "w": "towel", "ipa": "/ˈtaʊəl/", "pos": "n.", "def": "a soft cloth you use to make your body dry.", "ex": "He puts the towel on his head.", "mn": "运动包三件套:water, towel, shoes。谐音辅助(先读三遍 /ˈtaʊəl/):'掏我'——擦汗先掏毛巾。" },
+    { "w": "rest", "ipa": "/rest/", "pos": "n. / v.", "def": "a time when you stop working and sit or sleep.", "ex": "Take a rest — your body needs it.", "mn": "restaurant(餐厅)开头就是 rest——歇脚吃饭的地方。the rest 另有'剩下的'之意。" },
+    { "w": "muscle", "ipa": "/ˈmʌsl/", "pos": "n.", "def": "the parts inside your body that move your bones and make you strong.", "ex": "His leg muscles hurt after training.", "mn": "⚠️发音坑:c 不发音,读'马搜'。词源很萌:拉丁语'小老鼠'——肌肉鼓起来像皮下有只小鼠在跑。" },
+    { "w": "breath", "ipa": "/breθ/", "pos": "n.", "def": "the air that goes in and out of your body.", "ex": "Take a deep breath, then shoot.", "mn": "名词 breath /breθ/,动词 breathe /briːð/ 多个 e 拖长音。深呼吸=take a deep breath。" },
+    { "w": "count", "ipa": "/kaʊnt/", "pos": "v.", "def": "to say numbers one by one; to find how many there are.", "ex": "He counts his kicks: one, two, three...", "mn": "会计 accountant 就是天天 count 钱的人。count on sb=指望某人(把他算进来)。" },
+    { "w": "finish", "ipa": "/ˈfɪnɪʃ/", "pos": "v.", "def": "to come to the end of something.", "ex": "He finishes training when the sun comes up.", "mn": "赛跑终点线上写的就是 FINISH。fin 在拉丁语=结尾(电影结尾字幕 Fin)。" }
+  ]
+}

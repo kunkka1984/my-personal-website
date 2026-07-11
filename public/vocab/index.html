@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>词链 · 背单词</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔗</text></svg>">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- 首页 -->
+  <section id="view-home" class="view">
+    <header class="top">
+      <h1>词链</h1>
+      <div class="streak" id="streak">🔥 0 天</div>
+    </header>
+    <div class="tiles">
+      <div class="tile"><div class="tile-num" id="t-due">–</div><div class="tile-label">待复习</div></div>
+      <div class="tile"><div class="tile-num" id="t-new">–</div><div class="tile-label">今日新词</div></div>
+      <div class="tile"><div class="tile-num" id="t-learned">–</div><div class="tile-label">在学词</div></div>
+      <div class="tile"><div class="tile-num" id="t-known">–</div><div class="tile-label">已认识</div></div>
+    </div>
+    <div class="progress-wrap">
+      <div class="progress-labels"><span>词汇进度</span><span id="p-text">–</span></div>
+      <div class="progress-bar"><div class="progress-fill" id="p-fill"></div></div>
+    </div>
+    <button class="btn-primary" id="btn-start">开始今日学习</button>
+    <div class="home-links">
+      <button class="btn-ghost" id="btn-stats">学习统计</button>
+      <button class="btn-ghost" id="btn-list">全部词表</button>
+      <button class="btn-ghost" id="btn-settings">设置</button>
+    </div>
+    <p class="sync-note" id="sync-note"></p>
+  </section>
+
+  <!-- 预筛 -->
+  <section id="view-triage" class="view hidden">
+    <header class="top"><button class="back" data-back>‹ 返回</button><h2>快速预筛</h2></header>
+    <p class="hint">下面是新一批词。<b>点掉你已经认识的</b>，剩下的才进入学习。拿不准就留着。</p>
+    <div class="chips" id="triage-chips"></div>
+    <button class="btn-primary" id="btn-triage-done">剩下的开始学</button>
+  </section>
+
+  <!-- 故事 -->
+  <section id="view-story" class="view hidden">
+    <header class="top"><button class="back" data-back>‹ 返回</button><h2 id="story-batch"></h2></header>
+    <p class="hint">先通读故事，<b>任何不认识的词都可以点</b>，会弹出英文解释。加粗的是今天要记的词。</p>
+    <article class="story" id="story-box"></article>
+    <div class="row">
+      <button class="btn-ghost" id="btn-story-audio">🔊 听整篇</button>
+      <button class="btn-primary" id="btn-story-done">开始记单词</button>
+    </div>
+  </section>
+
+  <!-- 卡片 -->
+  <section id="view-card" class="view hidden">
+    <header class="top">
+      <button class="back" data-back>‹ 退出</button>
+      <div class="session-progress" id="session-progress"></div>
+    </header>
+    <div class="card" id="card">
+      <div class="card-tag" id="card-tag"></div>
+      <div class="card-word" id="card-word"></div>
+      <div class="card-ipa" id="card-ipa"></div>
+      <button class="speak-big" id="card-speak">🔊</button>
+      <div class="card-back hidden" id="card-back">
+        <div class="card-def clickable" id="card-def"></div>
+        <div class="card-example clickable" id="card-example"></div>
+        <div class="card-mnemonic" id="card-mnemonic"></div>
+      </div>
+    </div>
+    <div class="grade-area">
+      <button class="btn-primary" id="btn-show">显示答案</button>
+      <div class="grades hidden" id="grades">
+        <button class="grade g-again" data-grade="again">忘了</button>
+        <button class="grade g-hard" data-grade="hard">模糊</button>
+        <button class="grade g-good" data-grade="good">认识</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 完成 -->
+  <section id="view-done" class="view hidden">
+    <div class="done-box">
+      <div class="done-emoji">⚽️</div>
+      <h2>今天踢完收工！</h2>
+      <p id="done-summary"></p>
+      <button class="btn-primary" data-back>回到首页</button>
+    </div>
+  </section>
+
+  <!-- 统计 -->
+  <section id="view-stats" class="view hidden">
+    <header class="top"><button class="back" data-back>‹ 返回</button><h2>学习统计</h2></header>
+    <div class="tiles">
+      <div class="tile"><div class="tile-num" id="s-total">–</div><div class="tile-label">累计学过</div></div>
+      <div class="tile"><div class="tile-num" id="s-retention">–</div><div class="tile-label">近7天记住率</div></div>
+      <div class="tile"><div class="tile-num" id="s-streak">–</div><div class="tile-label">连续天数</div></div>
+      <div class="tile"><div class="tile-num" id="s-reviews">–</div><div class="tile-label">累计复习次数</div></div>
+    </div>
+    <h3>最近 14 天</h3>
+    <table class="log-table" id="log-table"></table>
+    <h3>顽固词（反复忘）</h3>
+    <div class="chips small" id="stubborn-list"></div>
+    <h3>点过但词典没收录</h3>
+    <p class="hint">这些词金教练会看到并补进词典。</p>
+    <div class="chips small" id="miss-list"></div>
+  </section>
+
+  <!-- 词表 -->
+  <section id="view-list" class="view hidden">
+    <header class="top"><button class="back" data-back>‹ 返回</button><h2>全部词表</h2></header>
+    <div id="word-list"></div>
+  </section>
+
+  <!-- 设置 -->
+  <section id="view-settings" class="view hidden">
+    <header class="top"><button class="back" data-back>‹ 返回</button><h2>设置</h2></header>
+    <label class="field">每天新词数
+      <input type="number" id="set-newperday" min="5" max="30" step="5">
+    </label>
+    <label class="field">朗读语速（0.5 慢 – 1.2 快）
+      <input type="number" id="set-rate" min="0.5" max="1.2" step="0.1">
+    </label>
+    <label class="field">同步密钥（token）
+      <input type="text" id="set-token" placeholder="从私密链接自动带入，一般不用填">
+    </label>
+    <button class="btn-primary" id="btn-save-settings">保存</button>
+    <p class="sync-note" id="settings-sync"></p>
+  </section>
+
+</div>
+
+<!-- 词链弹层 -->
+<div id="sheet-overlay" class="hidden">
+  <div id="sheet">
+    <div class="sheet-nav">
+      <button id="sheet-back" class="back">‹ 上一个</button>
+      <button id="sheet-close">✕</button>
+    </div>
+    <div class="sheet-word" id="sheet-w"></div>
+    <div class="sheet-ipa" id="sheet-i"></div>
+    <button class="speak-big" id="sheet-speak">🔊</button>
+    <div class="sheet-def clickable" id="sheet-d"></div>
+    <div class="sheet-example clickable" id="sheet-e"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

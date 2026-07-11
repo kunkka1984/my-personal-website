@@ -38,6 +38,11 @@ const menus: { key: string; label: string; items: MenuItem[] }[] = [
         note: "反脆弱的专注力工具",
       },
       {
+        label: "词链背单词",
+        href: "/vocab/index.html",
+        note: "故事串词 + 遗忘曲线",
+      },
+      {
         label: "全部应用",
         href: "/#apps",
         note: "自制应用总览",
