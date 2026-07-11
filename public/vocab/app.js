@@ -4,7 +4,7 @@
 /* ---------- 配置 ---------- */
 const API_BASE = "https://vocab-api.jinchongjie.workers.dev";
 const DATA_BASE = "data/";
-const ASSET_V = "20260711c"; // 内容版本号:词卡/词典有更新时同步改,防缓存吃旧数据
+const ASSET_V = "20260711d"; // 内容版本号:词卡/词典有更新时同步改,防缓存吃旧数据
 const IVL_CAP = 180;
 
 /* ---------- 小工具 ---------- */
@@ -125,7 +125,7 @@ async function flushSync() {
 }
 function setSyncNote(msg) {
   const el = $("sync-note");
-  if (el) el.textContent = msg;
+  if (el) el.textContent = `${msg} · v${ASSET_V.slice(4)}`; // 尾缀版本号,方便口头核对新旧
 }
 document.addEventListener("visibilitychange", () => {
   if (document.visibilityState === "hidden" && dirty) flushSync();

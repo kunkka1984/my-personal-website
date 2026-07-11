@@ -1,0 +1,5 @@
+/vocab/
+  Cache-Control: no-cache, must-revalidate
+
+/vocab/index.html
+  Cache-Control: no-cache, must-revalidate
