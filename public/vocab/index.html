@@ -30,6 +30,7 @@
     </div>
     <button class="btn-primary" id="btn-start" disabled>加载中…</button>
     <div class="home-links">
+      <button class="btn-ghost" id="btn-stories">听故事</button>
       <button class="btn-ghost" id="btn-stats">学习统计</button>
       <button class="btn-ghost" id="btn-list">全部词表</button>
       <button class="btn-ghost" id="btn-settings">设置</button>
@@ -92,6 +93,13 @@
       <p id="done-summary"></p>
       <button class="btn-primary" data-back>回到首页</button>
     </div>
+  </section>
+
+  <!-- 已学故事 -->
+  <section id="view-stories" class="view hidden">
+    <header class="top"><button class="back" data-back>‹ 返回</button><h2>已学故事</h2></header>
+    <p class="hint">学过的故事都在这里，随时重听。默认只放声音，进去后可点「显示原文」对照。</p>
+    <div id="stories-list"></div>
   </section>
 
   <!-- 统计 -->

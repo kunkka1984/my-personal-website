@@ -431,6 +431,31 @@ function renderStory(b, toLearn) {
   $("story-box").innerHTML = clickableHTML(b.story, b.words.map((w) => w.w));
   $("story-box").classList.add("hidden"); // 默认隐藏原文,先练听力
   $("btn-story-text").textContent = "显示原文";
+  $("btn-story-done").classList.remove("hidden");
+}
+
+/* 已学故事回放 */
+function renderStories() {
+  const box = $("stories-list");
+  box.innerHTML = "";
+  const ids = new Set(Object.values(state.words).map((e) => e.b).filter(Boolean));
+  const started = manifest.batches.filter((m) => ids.has(m.id));
+  if (!started.length) {
+    box.innerHTML = "<p class='hint'>还没学过故事，先去「开始今日学习」。</p>";
+    return;
+  }
+  for (const meta of started) {
+    const row = document.createElement("div");
+    row.className = "wl-row";
+    row.innerHTML = `<span class="wl-word">第 ${meta.id} 组 · ${meta.title}</span><span class="wl-status">🔊 重听 ›</span>`;
+    row.addEventListener("click", () => {
+      pendingBatch = batches[meta.id];
+      renderStory(pendingBatch, []);
+      $("btn-story-done").classList.add("hidden"); // 回放模式不进记词流程
+      show("view-story");
+    });
+    box.appendChild(row);
+  }
 }
 $("btn-story-audio").addEventListener("click", () => speak(pendingBatch.story));
 $("btn-story-text").addEventListener("click", () => {
@@ -540,6 +565,7 @@ function renderHome() {
     due > 0 ? `开始今日学习（复习 ${due}）` : quota > 0 && nextUntriagedBatch() ? "开始今日学习（新词）" : "今天的任务完成了 ✓";
 }
 $("btn-start").addEventListener("click", startSession);
+$("btn-stories").addEventListener("click", () => { renderStories(); show("view-stories"); });
 $("btn-stats").addEventListener("click", () => { renderStats(); show("view-stats"); });
 $("btn-list").addEventListener("click", () => { renderList(); show("view-list"); });
 $("btn-settings").addEventListener("click", () => { renderSettings(); show("view-settings"); });
