@@ -4,7 +4,7 @@
 /* ---------- 配置 ---------- */
 const API_BASE = "https://vocab-api.jinchongjie.workers.dev";
 const DATA_BASE = "data/";
-const ASSET_V = "20260711b"; // 内容版本号:词卡/词典有更新时同步改,防缓存吃旧数据
+const ASSET_V = "20260711c"; // 内容版本号:词卡/词典有更新时同步改,防缓存吃旧数据
 const IVL_CAP = 180;
 
 /* ---------- 小工具 ---------- */
@@ -69,6 +69,7 @@ function mergeStates(a, b) {
   }
   out.misses = [...new Set([...(a.misses || []), ...(b.misses || [])])];
   out.rev = Math.max(a.rev, b.rev);
+  out.resetAt = [a.resetAt, b.resetAt].filter(Boolean).sort().pop();
   return out;
 }
 
@@ -664,7 +665,11 @@ $("btn-save-settings").addEventListener("click", () => {
   try {
     const server = await pullServer();
     if (server) {
-      state = Object.keys(state.words).length ? mergeStates(state, server) : server;
+      if (server.resetAt && server.resetAt !== state.resetAt) {
+        state = server; // 管理端重置:云端 resetAt 更新时,本机旧进度直接作废
+      } else {
+        state = Object.keys(state.words).length ? mergeStates(state, server) : server;
+      }
       saveLocal();
       setSyncNote(`云同步正常 · 已学 ${Object.keys(state.words).length} 词`);
     } else if (getToken()) {
