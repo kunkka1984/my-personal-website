@@ -363,6 +363,7 @@ function nextUntriagedBatch() {
 }
 
 function startSession() {
+  if (!manifest) return; // 内容未就绪
   const due = dueReviewWords();
   queue = due.map((w) => ({ w }));
   qIndex = 0;
@@ -647,5 +648,6 @@ $("btn-save-settings").addEventListener("click", () => {
     setSyncNote("云端连不上，先用本机进度");
   }
   renderHome();
+  $("btn-start").disabled = false; // 内容+云端进度就绪后才允许开始,避免加载竞态
   show("view-home", false);
 })();

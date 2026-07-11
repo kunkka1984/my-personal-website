@@ -47,6 +47,7 @@ button { font-family: inherit; cursor: pointer; }
   color: #fff; background: var(--accent); border: none; border-radius: 14px;
 }
 .btn-primary:active { opacity: .85; }
+.btn-primary:disabled { opacity: .5; }
 .btn-ghost {
   flex: 1; padding: 12px 8px; font-size: .92rem; color: var(--accent);
   background: var(--card); border: 1px solid var(--line); border-radius: 12px;
