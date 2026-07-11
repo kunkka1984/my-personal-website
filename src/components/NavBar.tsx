@@ -111,7 +111,7 @@ export default function NavBar() {
                   </svg>
                 </button>
                 {open === menu.key && (
-                  <div className="absolute right-0 top-full w-60 bg-white/95 backdrop-blur-xl rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.12)] border border-black/5 p-2 overflow-hidden">
+                  <div className="absolute right-0 top-full w-60 max-sm:fixed max-sm:left-1/2 max-sm:right-auto max-sm:top-12 max-sm:-translate-x-1/2 max-sm:w-[calc(100vw-32px)] max-sm:max-w-72 bg-white/95 backdrop-blur-xl rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.12)] border border-black/5 p-2 overflow-hidden">
                     {menu.items.map((item) =>
                       item.external ? (
                         <a
