@@ -647,6 +647,12 @@ $("btn-save-settings").addEventListener("click", () => {
   } catch {
     setSyncNote("云端连不上，先用本机进度");
   }
+  // 只要配了密钥且本机有进度,打开页面就推一版——
+  // 修复:此前仅学习动作触发上传,"先学后配密钥"的老进度永远不上云
+  if (getToken() && !API_BASE.startsWith("__") && Object.keys(state.words).length) {
+    dirty = true;
+    flushSync();
+  }
   renderHome();
   $("btn-start").disabled = false; // 内容+云端进度就绪后才允许开始,避免加载竞态
   show("view-home", false);
