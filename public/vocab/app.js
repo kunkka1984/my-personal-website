@@ -2,7 +2,7 @@
 "use strict";
 
 /* ---------- 配置 ---------- */
-const API_BASE = "__VOCAB_API_URL__"; // 部署 worker 后由 CC 替换为真实地址
+const API_BASE = "https://vocab-api.jinchongjie.workers.dev";
 const DATA_BASE = "data/";
 const IVL_CAP = 180;
 
