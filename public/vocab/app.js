@@ -4,6 +4,7 @@
 /* ---------- 配置 ---------- */
 const API_BASE = "https://vocab-api.jinchongjie.workers.dev";
 const DATA_BASE = "data/";
+const ASSET_V = "20260711b"; // 内容版本号:词卡/词典有更新时同步改,防缓存吃旧数据
 const IVL_CAP = 180;
 
 /* ---------- 小工具 ---------- */
@@ -131,11 +132,12 @@ document.addEventListener("visibilitychange", () => {
 
 /* ---------- 内容加载 ---------- */
 async function loadContent() {
-  manifest = await (await fetch(DATA_BASE + "manifest.json")).json();
-  const dictJson = await (await fetch(DATA_BASE + "dict.json")).json();
+  const v = "?v=" + ASSET_V;
+  manifest = await (await fetch(DATA_BASE + "manifest.json" + v)).json();
+  const dictJson = await (await fetch(DATA_BASE + "dict.json" + v)).json();
   Object.assign(DICT, dictJson);
   const files = await Promise.all(
-    manifest.batches.map((b) => fetch(DATA_BASE + b.file).then((r) => r.json()))
+    manifest.batches.map((b) => fetch(DATA_BASE + b.file + v).then((r) => r.json()))
   );
   for (const b of files) {
     batches[b.id] = b;
