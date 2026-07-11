@@ -31,7 +31,7 @@ function freshState() {
   return {
     rev: 0,
     updatedAt: null,
-    settings: { newPerDay: 15, rate: 0.9 },
+    settings: { newPerDay: 15, rate: 0.9, accent: "us" },
     words: {},   // w -> {st:'new'|'learn'|'rev'|'known', due, ivl, ease, reps, lapses, last, b}
     log: {},     // date -> {n(新学), r(复习), g(认识), a(忘了)}
     misses: [],
@@ -211,7 +211,8 @@ function openSheet(raw, push = true) {
   if (push) sheetStack.push(r.word);
   $("sheet-w").textContent = r.word;
   if (r.entry) {
-    $("sheet-i").textContent = r.entry.ipa || "";
+    $("sheet-i").textContent = r.entry.ipa
+      ? `${r.entry.ipa} · ${state.settings.accent === "uk" ? "英" : "美"}` : "";
     $("sheet-d").innerHTML = clickableHTML(r.entry.def || "");
     $("sheet-e").innerHTML = r.entry.ex ? clickableHTML(r.entry.ex) : "";
     $("sheet-d").classList.remove("sheet-missing");
@@ -243,28 +244,45 @@ $("sheet-back").addEventListener("click", () => {
   if (sheetStack.length) openSheet(sheetStack[sheetStack.length - 1], false);
   else $("sheet-overlay").classList.add("hidden");
 });
-$("sheet-speak").addEventListener("click", () => speak($("sheet-w").textContent));
+$("sheet-speak").addEventListener("click", () => speakWord($("sheet-w").textContent));
 
 /* ---------- 发音 ---------- */
+/* 单词/短语走有道真人发音(美音type=2/英音type=1,国内直连);整段文本或失败时兜底浏览器TTS */
 let voice = null;
+let audioEl = null;
 function pickVoice() {
+  const want = (state?.settings?.accent ?? "us") === "uk" ? "en-GB" : "en-US";
   const vs = speechSynthesis.getVoices().filter((v) => v.lang.startsWith("en"));
   voice =
-    vs.find((v) => /Samantha|Ava|Allison/.test(v.name)) ||
-    vs.find((v) => v.lang === "en-US") || vs[0] || null;
+    vs.find((v) => v.lang === want && /Samantha|Ava|Allison|Daniel|Kate/.test(v.name)) ||
+    vs.find((v) => v.lang === want) || vs[0] || null;
 }
 if ("speechSynthesis" in window) {
   pickVoice();
   speechSynthesis.onvoiceschanged = pickVoice;
 }
-function speak(text) {
+function speakTTS(text) {
   if (!("speechSynthesis" in window)) return;
   speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text);
   if (voice) u.voice = voice;
-  u.lang = "en-US";
+  u.lang = (state?.settings?.accent ?? "us") === "uk" ? "en-GB" : "en-US";
   u.rate = state?.settings?.rate ?? 0.9;
   speechSynthesis.speak(u);
+}
+function speakWord(word) {
+  const w = String(word).trim();
+  if (!w || /\s/.test(w) && w.split(/\s+/).length > 4) return speakTTS(w);
+  const type = (state?.settings?.accent ?? "us") === "uk" ? 1 : 2;
+  speechSynthesis?.cancel();
+  if (audioEl) { audioEl.pause(); }
+  audioEl = new Audio(`https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(w)}&type=${type}`);
+  audioEl.play().catch(() => speakTTS(w));
+  audioEl.onerror = () => speakTTS(w);
+}
+function speak(text) {
+  /* 整段朗读(故事)仍走 TTS */
+  speakTTS(text);
 }
 
 /* ---------- 视图切换 ---------- */
@@ -410,8 +428,15 @@ function renderStory(b, toLearn) {
   storyNewWords = toLearn;
   $("story-batch").textContent = `第 ${b.id} 组 · ${b.title}`;
   $("story-box").innerHTML = clickableHTML(b.story, b.words.map((w) => w.w));
+  $("story-box").classList.add("hidden"); // 默认隐藏原文,先练听力
+  $("btn-story-text").textContent = "显示原文";
 }
 $("btn-story-audio").addEventListener("click", () => speak(pendingBatch.story));
+$("btn-story-text").addEventListener("click", () => {
+  const box = $("story-box");
+  box.classList.toggle("hidden");
+  $("btn-story-text").textContent = box.classList.contains("hidden") ? "显示原文" : "隐藏原文";
+});
 $("btn-story-done").addEventListener("click", () => {
   speechSynthesis?.cancel();
   queue = storyNewWords.map((w) => ({ w }));
@@ -435,18 +460,19 @@ function renderCard() {
   const cardData = findCardData(c.w);
   $("card-tag").textContent = isNewWord(c.w) ? "新词" : `复习 · 第 ${entry.reps} 次`;
   $("card-word").textContent = c.w;
-  $("card-ipa").textContent = cardData?.ipa || DICT[c.w]?.ipa || "";
+  const ipa = cardData?.ipa || DICT[c.w]?.ipa || "";
+  $("card-ipa").textContent = ipa ? `${ipa} · ${state.settings.accent === "uk" ? "英" : "美"}` : "";
   $("card-back").classList.add("hidden");
   $("grades").classList.add("hidden");
   $("btn-show").classList.remove("hidden");
   $("session-progress").textContent = `${qIndex + 1} / ${queue.length}`;
-  speak(c.w);
+  speakWord(c.w);
 }
 function findCardData(w) {
   const b = batches[state.words[w]?.b];
   return b?.words.find((x) => x.w === w) || null;
 }
-$("card-speak").addEventListener("click", () => speak($("card-word").textContent));
+$("card-speak").addEventListener("click", () => speakWord($("card-word").textContent));
 $("btn-show").addEventListener("click", () => {
   const c = currentCard();
   const d = findCardData(c.w) || { def: DICT[c.w]?.def, ex: DICT[c.w]?.ex };
@@ -458,7 +484,7 @@ $("btn-show").addEventListener("click", () => {
   $("card-back").classList.remove("hidden");
   $("btn-show").classList.add("hidden");
   $("grades").classList.remove("hidden");
-  speak(c.w);
+  speakWord(c.w);
 });
 document.querySelectorAll(".grade").forEach((btn) =>
   btn.addEventListener("click", () => {
@@ -573,6 +599,7 @@ function renderList() {
 function renderSettings() {
   $("set-newperday").value = state.settings.newPerDay;
   $("set-rate").value = state.settings.rate;
+  $("set-accent").value = state.settings.accent || "us";
   $("set-token").value = getToken();
   $("settings-sync").textContent = getToken()
     ? "云同步已配置"
@@ -581,6 +608,8 @@ function renderSettings() {
 $("btn-save-settings").addEventListener("click", () => {
   state.settings.newPerDay = Math.max(5, Math.min(30, +$("set-newperday").value || 15));
   state.settings.rate = Math.max(0.5, Math.min(1.2, +$("set-rate").value || 0.9));
+  state.settings.accent = $("set-accent").value === "uk" ? "uk" : "us";
+  pickVoice();
   const tok = $("set-token").value.trim();
   if (tok) localStorage.setItem("vocabToken", tok);
   markDirty();

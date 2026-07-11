@@ -112,15 +112,20 @@ h3 { font-size: .95rem; margin: 22px 0 10px; color: var(--ink-2); }
 .wl-status { margin-left: auto; font-size: .75rem; color: var(--ink-3); }
 
 .field { display: block; font-size: .9rem; color: var(--ink-2); margin-bottom: 16px; }
-.field input { display: block; width: 100%; margin-top: 6px; padding: 11px; font-size: 1rem; border: 1px solid var(--line); border-radius: 10px; background: var(--card); color: var(--ink); }
+.field input, .field select { display: block; width: 100%; margin-top: 6px; padding: 11px; font-size: 1rem; border: 1px solid var(--line); border-radius: 10px; background: var(--card); color: var(--ink); }
+
+.story { margin-bottom: 16px; }
+.row + .story { margin-top: 16px; }
+.story-next { margin-top: 4px; }
 
 #sheet-overlay {
   position: fixed; inset: 0; background: rgba(20, 25, 35, .45); z-index: 50;
-  display: flex; align-items: flex-end; justify-content: center;
+  display: flex; align-items: center; justify-content: center; padding: 20px;
 }
 #sheet {
-  background: var(--card); border-radius: 18px 18px 0 0; width: 100%; max-width: 540px;
-  padding: 14px 20px calc(28px + env(safe-area-inset-bottom)); max-height: 72vh; overflow-y: auto;
+  background: var(--card); border-radius: 18px; width: 100%; max-width: 460px;
+  padding: 14px 20px 24px; max-height: 70vh; overflow-y: auto;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, .18);
 }
 .sheet-nav { display: flex; justify-content: space-between; margin-bottom: 4px; }
 #sheet-close { background: none; border: none; font-size: 1.1rem; color: var(--ink-3); padding: 6px; }

@@ -48,12 +48,13 @@
   <!-- 故事 -->
   <section id="view-story" class="view hidden">
     <header class="top"><button class="back" data-back>‹ 返回</button><h2 id="story-batch"></h2></header>
-    <p class="hint">先通读故事，<b>任何不认识的词都可以点</b>，会弹出英文解释。加粗的是今天要记的词。</p>
-    <article class="story" id="story-box"></article>
+    <p class="hint">这段小故事串起了今天的新词。<b>先只用耳朵听一两遍</b>，再点「显示原文」对照——原文里任何不认识的词都可以点，会弹出英文解释。</p>
     <div class="row">
-      <button class="btn-ghost" id="btn-story-audio">🔊 听整篇</button>
-      <button class="btn-primary" id="btn-story-done">开始记单词</button>
+      <button class="btn-primary" id="btn-story-audio">🔊 听故事</button>
+      <button class="btn-ghost" id="btn-story-text">显示原文</button>
     </div>
+    <article class="story hidden" id="story-box"></article>
+    <button class="btn-primary story-next" id="btn-story-done">开始记单词</button>
   </section>
 
   <!-- 卡片 -->
@@ -125,6 +126,12 @@
     </label>
     <label class="field">朗读语速（0.5 慢 – 1.2 快）
       <input type="number" id="set-rate" min="0.5" max="1.2" step="0.1">
+    </label>
+    <label class="field">发音口音
+      <select id="set-accent">
+        <option value="us">美音（推荐）</option>
+        <option value="uk">英音</option>
+      </select>
     </label>
     <label class="field">同步密钥（token）
       <input type="text" id="set-token" placeholder="从私密链接自动带入，一般不用填">

@@ -9,14 +9,14 @@
     { "w": "together", "ipa": "/təˈɡeðər/", "pos": "adv.", "def": "with each other; not alone.", "ex": "They walk home together after school.", "mn": "拆开记:to+get+her→'去接她',然后就'在一起'了。" },
     { "w": "joke", "ipa": "/dʒoʊk/", "pos": "n. / v.", "def": "something you say to make people laugh.", "ex": "Ryo tells a joke, and everyone laughs.", "mn": "扑克牌里的小丑 Joker=讲笑话的人。开玩笑=just joking。" },
     { "w": "kind", "ipa": "/kaɪnd/", "pos": "adj. / n.", "def": "good to other people and wanting to help them; also a group of things that are the same.", "ex": "Sanae is kind to the new student.", "mn": "一词两义:善良的/种类(a kind of=一种)。kind 的人把人当'同类'待。" },
-    { "w": "shy", "ipa": "/ʃaɪ/", "pos": "adj.", "def": "a little afraid to talk to people you do not know.", "ex": "Sanae is shy, so her face turns red.", "mn": "谐音辅助(先读三遍 /ʃaɪ/):'害'——害羞的'害'字发音都像。" },
+    { "w": "shy", "ipa": "/ʃaɪ/", "pos": "adj.", "def": "a little afraid to talk to people you do not know.", "ex": "Sanae is shy, so her face turns red.", "mn": "本义'易受惊的马',见生人就往后躲。camera-shy=不爱上镜。反义词 outgoing(外向)。" },
     { "w": "brave", "ipa": "/breɪv/", "pos": "adj.", "def": "not afraid when something is hard or dangerous.", "ex": "Be brave and shoot!", "mn": "手机浏览器 Brave、'Brave heart 勇敢的心'。喝彩 Bravo! 是它的亲戚。" },
     { "w": "honest", "ipa": "/ˈɑːnɪst/", "pos": "adj.", "def": "always saying what is true; never taking things that are not yours.", "ex": "An honest player says: \"The ball touched my hand.\"", "mn": "⚠️发音坑:h 不发音,所以是 an honest man。to be honest=说实话(口语高频)。" },
     { "w": "trust", "ipa": "/trʌst/", "pos": "v. / n.", "def": "to believe that someone is good and will not hurt you.", "ex": "I trust you — you will not lie to me.", "mn": "true(真)的一家人:相信别人是真的=信任。Trust me!=相信我!" },
     { "w": "quarrel", "ipa": "/ˈkwɔːrəl/", "pos": "v. / n.", "def": "to talk in an angry way with someone because you do not agree.", "ex": "They quarrel about the last shoot.", "mn": "联想:qu 开头像 question——问题谈崩了就吵起来。比 fight(动手)轻,只动嘴。" },
     { "w": "apologize", "ipa": "/əˈpɑːlədʒaɪz/", "pos": "v.", "def": "to say you are sorry for something bad you did.", "ex": "Ryo apologizes: \"It was my fault.\"", "mn": "apology(道歉)的动词。记场景:说 I'm sorry 这个动作,一个词就是 apologize。" },
     { "w": "forgive", "ipa": "/fərˈɡɪv/", "pos": "v.", "def": "to stop being angry with someone who did a bad thing to you.", "ex": "Tsubasa forgives his friend fast.", "mn": "for+give→'给出去'不再计较=原谅。过去式 forgave。" },
-    { "w": "hug", "ipa": "/hʌɡ/", "pos": "v. / n.", "def": "to put your arms around someone because you like them.", "ex": "They hug after the win.", "mn": "谐音辅助(先读三遍 /hʌɡ/):'哈格'——张开手臂'哈'一下抱住。give me a hug=抱一个。" },
+    { "w": "hug", "ipa": "/hʌɡ/", "pos": "v. / n.", "def": "to put your arms around someone because you like them.", "ex": "They hug after the win.", "mn": "字形联想:H 像两个人面对面,u 张开双臂,g 收拢抱住。bear hug=熊抱,give me a hug=抱一个。" },
     { "w": "smile", "ipa": "/smaɪl/", "pos": "v. / n.", "def": "to make your mouth turn up because you are happy; no sound.", "ex": "Sanae smiles when Tsubasa scores.", "mn": "对比:smile 微笑无声,laugh 大笑出声。笑脸符号 😊 的官方英文名就是 smile。" }
   ]
 }

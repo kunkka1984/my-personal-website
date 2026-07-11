@@ -15,7 +15,7 @@
     { "w": "angry", "ipa": "/ˈæŋɡri/", "pos": "adj.", "def": "feeling very not happy with someone, and maybe wanting to shout.", "ex": "Genzo is angry when they laugh at him.", "mn": "anger(怒气)+y→满是怒气的。发音像'安格瑞',眉毛拧起来。" },
     { "w": "laugh", "ipa": "/læf/", "pos": "v.", "def": "to make a sound with your mouth because something is funny.", "ex": "Genzo laughs: \"You? Play with me?\"", "mn": "⚠️拼写坑:gh 发 /f/ 音。笑出声是 laugh,微笑不出声是 smile。" },
     { "w": "strong", "ipa": "/strɔːŋ/", "pos": "adj.", "def": "having a lot of power in your body.", "ex": "Genzo's hands are big and strong.", "mn": "strength 是它的名词。str- 家族:strong 壮、strict 严、struggle 搏斗——都很'用力'。" },
-    { "w": "weak", "ipa": "/wiːk/", "pos": "adj.", "def": "not strong.", "ex": "\"New kids are weak,\" thinks Genzo. He is wrong.", "mn": "谐音辅助(先读三遍 /wiːk/):'萎克'——萎了,没劲=弱。和 week(星期)同音不同字。" },
+    { "w": "weak", "ipa": "/wiːk/", "pos": "adj.", "def": "not strong.", "ex": "\"New kids are weak,\" thinks Genzo. He is wrong.", "mn": "和 strong 捆着记(强↔弱)。同音词 week(星期)拼写不同:说'弱'用 a,说'周'用 e。weak point=弱点。" },
     { "w": "wait", "ipa": "/weɪt/", "pos": "v.", "def": "to stay in a place until something happens.", "ex": "Tsubasa waits for the answer at the gate.", "mn": "wait for sb/sth 等某人某事。服务员 waiter=等着为你服务的人。" },
     { "w": "answer", "ipa": "/ˈænsər/", "pos": "n. / v.", "def": "what you say back when someone asks you something.", "ex": "Two days later, the answer comes: \"OK. One game.\"", "mn": "⚠️发音坑:w 不发音。question(问题)↔answer(回答),一对。" }
   ]
