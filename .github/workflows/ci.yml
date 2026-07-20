@@ -1,0 +1,32 @@
+# 发布前的构建检查(轻量 CI,不锁 main)
+# 每次 push 或 PR 自动跑一遍 next build,构建过=站点能正常上线,失败=先别信这次改动。
+# 说明:这里只做"体检报告",不强制拦截 main;你照旧丢 MD 推 main 发文即可。
+# 若哪天想升级成"必须过 CI 才能合并",在 GitHub 仓库 Settings→Branches 加分支保护即可。
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    name: 构建检查
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 装 Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: 装依赖
+        run: npm ci
+
+      - name: 构建(发布前的关键关卡)
+        run: npm run build
+
+      - name: Lint(仅提示,不拦截)
+        run: npm run lint
+        continue-on-error: true
