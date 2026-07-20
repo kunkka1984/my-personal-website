@@ -658,7 +658,7 @@ $("btn-save-settings").addEventListener("click", () => {
   state = loadLocal() || freshState();
   try {
     await loadContent();
-  } catch (e) {
+  } catch {
     document.body.innerHTML = "<p style='padding:40px;text-align:center'>内容加载失败，请检查网络后刷新。</p>";
     return;
   }

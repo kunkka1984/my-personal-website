@@ -17,6 +17,11 @@ interface IPOItem {
   IS_BEIJING: number | string;
 }
 
+interface EastmoneyIPOResponse {
+  success: boolean;
+  result?: { data: IPOItem[] };
+}
+
 interface ParsedIPO {
   code: string;
   name: string;
@@ -65,22 +70,23 @@ export default function IPOReminderWidget() {
         const callbackName = 'jsonpCallback_' + Math.round(100000 * Math.random());
         const url = `https://datacenter-web.eastmoney.com/api/data/v1/get?callback=${callbackName}&sortColumns=APPLY_DATE,SECURITY_CODE&sortTypes=-1,-1&pageSize=50&pageNumber=1&reportName=RPTA_APP_IPOAPPLY&columns=ALL&source=WEB&client=WEB`;
         
-        const data = await new Promise<any>((resolve, reject) => {
+        const data = await new Promise<EastmoneyIPOResponse>((resolve, reject) => {
           const script = document.createElement('script');
           script.src = url;
-          
-          (window as any)[callbackName] = (response: any) => {
+          const w = window as unknown as Record<string, ((response: EastmoneyIPOResponse) => void) | undefined>;
+
+          w[callbackName] = (response: EastmoneyIPOResponse) => {
             resolve(response);
             document.body.removeChild(script);
-            delete (window as any)[callbackName];
+            delete w[callbackName];
           };
-          
+
           script.onerror = () => {
             reject(new Error("网络请求失败"));
             document.body.removeChild(script);
-            delete (window as any)[callbackName];
+            delete w[callbackName];
           };
-          
+
           document.body.appendChild(script);
         });
 
@@ -142,9 +148,9 @@ export default function IPOReminderWidget() {
         } else {
           setError("获取数据失败");
         }
-      } catch (err: any) {
+      } catch (err: unknown) {
         if (isMounted) {
-          setError(err.message || "请求异常");
+          setError(err instanceof Error ? err.message : "请求异常");
         }
       } finally {
         if (isMounted) setLoading(false);

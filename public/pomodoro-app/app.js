@@ -476,7 +476,6 @@ function updateUI() {
     dom.statusText.textContent = stateLabel;
 
     // 3. 更新圆环进度条
-    const progressPercent = (timer.timeLeft / timer.totalDuration) * 100;
     // strokeDashoffset 满值为 CIRCUMFERENCE (代表0进度)，0为满进度
     const offset = (timer.timeLeft / timer.totalDuration) * CIRCUMFERENCE;
     dom.progressRingBar.style.strokeDashoffset = offset;

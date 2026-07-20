@@ -161,6 +161,8 @@ export default function HomeClient({ articles }: { articles: ArticleMeta[] }) {
                 <div
                   className={`w-full md:w-1/2 h-[400px] overflow-hidden ${index % 2 === 1 ? "md:order-last" : ""}`}
                 >
+                  {/* 静态导出站(output: export),next/image 需 unoptimized、无优化收益,此处保留原生 img */}
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={app.image}
                     alt={app.name}
